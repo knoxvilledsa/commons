@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Knoxville Area DSA. Another Knoxville is possible.">
+  <defs>
+    <pattern id="halftone" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2.1" fill="#000000"/>
+    </pattern>
+  </defs>
+
+  <!-- red flood + ben-day screenprint -->
+  <rect width="1200" height="630" fill="#EC1F27"/>
+  <rect width="1200" height="630" fill="url(#halftone)" opacity="0.14"/>
+
+  <!-- Great Smoky Mountains: the same layered ridgelines as the homepage hero -->
+  <g transform="translate(0,390)">
+    <path d="M0,240 L0,118 L130,92 L280,116 L430,80 L600,110 L770,76 L940,108 L1080,90 L1200,112 L1200,240 Z" fill="#FFFFFF" opacity="0.12"/>
+    <path d="M0,240 L0,166 L150,146 L320,176 L470,148 L640,178 L800,146 L970,176 L1110,154 L1200,170 L1200,240 Z" fill="#FFFFFF" opacity="0.18"/>
+  </g>
+
+  <!-- downtown Knoxville skyline: the same cluster as the homepage hero
+       (church steeple, the Sunsphere, the office cluster, the two tall towers, a Gothic spire) -->
+  <g transform="translate(214,268) scale(1.206)" fill="#FFFFFF" opacity="0.26">
+    <rect x="0" y="288" width="680" height="12"/>
+    <path d="M30,288 L36,156 L42,288 Z"/>
+    <rect x="20" y="254" width="22" height="34"/>
+    <rect x="48" y="246" width="40" height="42"/>
+    <rect x="92" y="226" width="34" height="62"/>
+    <rect x="128" y="242" width="26" height="46"/>
+    <path d="M194,145 L191,246 L174,288 L236,288 L219,246 L216,145 Z"/>
+    <circle cx="205" cy="108" r="37"/>
+    <rect x="244" y="216" width="46" height="72"/>
+    <rect x="292" y="232" width="28" height="56"/>
+    <rect x="322" y="218" width="34" height="70"/>
+    <rect x="358" y="238" width="26" height="50"/>
+    <rect x="386" y="222" width="26" height="66"/>
+    <rect x="420" y="116" width="40" height="172"/>
+    <rect x="428" y="90" width="3" height="26"/>
+    <rect x="449" y="96" width="3" height="20"/>
+    <rect x="468" y="150" width="40" height="138"/>
+    <rect x="476" y="132" width="24" height="18"/>
+    <rect x="516" y="208" width="64" height="80"/>
+    <rect x="584" y="224" width="40" height="64"/>
+    <rect x="636" y="198" width="26" height="90"/>
+    <path d="M634,198 L649,170 L664,198 Z"/>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="80" y="150" fill="#FFFFFF" font-family="'Spline Sans Mono', ui-monospace, monospace" font-size="26" font-weight="600" letter-spacing="5">DEMOCRATIC SOCIALISTS OF AMERICA · KNOXVILLE, TN</text>
+
+  <!-- headline -->
+  <text x="76" y="290" fill="#FFFFFF" font-family="'Archivo', sans-serif" font-size="116" font-weight="900" letter-spacing="-1">ANOTHER</text>
+  <text x="76" y="400" fill="#FFFFFF" font-family="'Archivo', sans-serif" font-size="116" font-weight="900" letter-spacing="-1">KNOXVILLE</text>
+  <text x="76" y="510" fill="#FFFFFF" font-family="'Archivo', sans-serif" font-size="116" font-weight="900" letter-spacing="-1">IS POSSIBLE</text>
+
+  <!-- url chip -->
+  <rect x="80" y="556" width="290" height="44" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="100" y="585" fill="#FFFFFF" font-family="'Spline Sans Mono', ui-monospace, monospace" font-size="22" font-weight="700" letter-spacing="2">KNOXVILLEDSA.ORG</text>
+</svg>

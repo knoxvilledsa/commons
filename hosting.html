@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/*__theme_param__*/(function(){try{var p=new URLSearchParams(location.search).get("theme");if(p==="dark"||p==="light"){localStorage.setItem("knoxdsa-theme",p);}}catch(e){}})();</script>
+<script>(function(){try{var k='knoxdsa-theme';var s=localStorage.getItem(k);var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How This Site Is Hosted and Run · Knoxville Area DSA</title>
+<meta name="description" content="How the new Knoxville Area DSA website is hosted and run, in plain language: no server to babysit, nothing to patch, about 0 USD a month, and a volunteer who can use Gmail can publish.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- share metadata -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#EC1F27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Knoxville Area DSA">
+<meta property="og:title" content="How This Site Is Hosted and Run · Knoxville Area DSA">
+<meta property="og:description" content="How the new Knoxville Area DSA website is hosted and run, in plain language: no server to babysit, nothing to patch, about 0 USD a month, and a volunteer who can use Gmail can publish.">
+<meta property="og:image" content="assets/og-card.svg">
+<meta property="og:url" content="https://knoxvilledsa.org/hosting.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How This Site Is Hosted and Run · Knoxville Area DSA">
+<meta name="twitter:description" content="How the new Knoxville Area DSA website is hosted and run, in plain language: no server to babysit, nothing to patch, about 0 USD a month, and a volunteer who can use Gmail can publish.">
+<meta name="twitter:image" content="assets/og-card.svg">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="meta-side" aria-hidden="true"></aside>
+
+<div class="proto-ribbon" role="region" aria-label="Prototype notice">
+  <div class="wrap">
+    <span class="prk">Prototype</span>
+    <span class="prtext">A design preview of a new Knoxville DSA website. Some content is sample, marked where shown.</span>
+    <a class="prlink" href="about-prototype.html">What is this?</a>
+    <button class="pr-x" type="button" data-ribbon-dismiss aria-label="Dismiss prototype notice">Dismiss</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html" aria-label="Knoxville Area DSA home">
+      <img class="brand-logo logo-light" src="assets/logo-black.png" alt="Knoxville Area DSA logo">
+      <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="" aria-hidden="true">
+      <span>
+        <span class="b-name">Knoxville Area DSA</span>
+        <span class="b-sub">Democratic Socialists of America</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="start.html">Start Here</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <a class="btn btn--red nav-cta desktop" href="join.html">Join</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+        <span class="tt-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Toggle theme</span>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="start.html">Start Here</a>
+        <a href="join.html">Join</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a class="mm-cta" href="join.html">Join the chapter</a>
+        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+          <span class="tt-label-dark">Switch to dark</span><span class="tt-label-light">Switch to light</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- BULLETIN STRIP -->
+<div class="bulletin on-ink" role="region" aria-label="Next meeting">
+  <div class="wrap">
+    <span class="bdot" aria-hidden="true"></span>
+    <span class="blabel">Next meeting</span>
+    <span class="bcount" data-countdown aria-live="polite">In 4 weeks</span><span class="bsep" aria-hidden="true">·</span>
+    <span data-meeting-date>Mon Jul 27</span><span class="bsep" aria-hidden="true">·</span>
+    <span>6:00 PM</span><span class="bsep" aria-hidden="true">·</span>
+    <span>Online + in person (hybrid)</span><span class="bsep" aria-hidden="true">·</span>
+    <span>All welcome</span>
+    <a class="bdetails" href="events.html">Details <span class="arrow" aria-hidden="true">&rsaquo;</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEAD -->
+  <section class="page-head" aria-labelledby="ph">
+    <div class="wrap">
+      <p class="crumbs"><a href="about-prototype.html">About this prototype</a> <span class="sep" aria-hidden="true">/</span> How it is hosted</p>
+      <p class="eyebrow">Under the hood, in plain terms</p>
+      <h1 id="ph">How this site is hosted and run</h1>
+      <p class="lead">No server to babysit, nothing to patch, about 0 USD a month. Here is what that actually means, told the way you would explain it to a neighbor at a meeting.</p>
+    </div>
+  </section>
+
+  <!-- THE BIG IDEA -->
+  <section class="section" aria-labelledby="idea">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="idea">The big idea, in one picture</h2>
+        <p>Think about the website the chapter has now as an apartment the chapter rents and has to maintain itself. The plumbing, the locks, the wiring, every repair, all of it is the chapter&rsquo;s problem. In website terms that &ldquo;plumbing&rdquo; is a computer running somewhere (a server), a filing cabinet of content (a database), and a pile of add-ons (the WordPress plugins). When nobody has time to keep up the repairs, things leak, locks fail, and the place falls into disrepair. That is the burden of any site with moving parts that a volunteer chapter has to keep patched.</p>
+        <p>The new site is more like a printed flyer pinned to a public board that the city keeps up. You hand over finished pages, and a service simply keeps them on the wall for everyone to read. There is no plumbing inside to spring a leak, no lock to pick, because nothing is actually &ldquo;running&rdquo; behind it. It is just the finished pages, sitting there, handed to a service whose whole job is to keep them online and fast.</p>
+        <p>That one shift, from a machine you have to tend to a finished thing you hand off, is why the new site costs almost nothing, almost never breaks, and needs no technical person on call.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE THREE PIECES -->
+  <section class="section section--band" aria-labelledby="pieces">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What is in the box</p>
+        <h2 class="section-title" id="pieces">The three pieces</h2>
+        <p class="lead">The whole setup is just three free or nearly free services, each with one clear job. None of them is something the chapter has to run or repair.</p>
+      </div>
+
+      <div class="cards cards--3">
+        <a class="linkcard" href="publish-demo.html">
+          <span class="kicker">The pages · Astro</span>
+          <h3>The pages</h3>
+          <p>Astro is a static site builder, which means it bakes every page ahead of time, like printing the flyers before the meeting instead of writing them on the spot. By the time a visitor arrives there is nothing left to compute, so the site loads fast and there is almost nothing that can break.</p>
+          <span class="go">See it build &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="publish-demo.html">
+          <span class="kicker">The editor · Sanity</span>
+          <h3>The editor</h3>
+          <p>Sanity (free for a chapter this size) is the CMS, which is just a fancy word for the place you type the content. Volunteers sign in with their Gmail and fill in a friendly online form to write a post or add an event. No code, no setup, nothing scary.</p>
+          <span class="go">Try the form &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="why-new-site.html">
+          <span class="kicker">The host · Cloudflare</span>
+          <h3>The host</h3>
+          <p>Cloudflare Pages is a global service that keeps the finished pages online, adds the little padlock for a secure connection (HTTPS) automatically, and shrugs off attacks. It works as a CDN, meaning it keeps copies of the pages close to each visitor so they load fast everywhere.</p>
+          <span class="go">Why we are switching &rsaquo;</span>
+        </a>
+      </div>
+
+      <div class="callout" style="margin-top:30px;">
+        <span class="clabel">In one sentence</span>
+        <p>Volunteers <strong>type</strong> in Sanity, Astro <strong>bakes</strong> the pages, and Cloudflare <strong>keeps them on the wall</strong> for the world to read.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT HAPPENS WHEN A VOLUNTEER POSTS -->
+  <section class="section" aria-labelledby="flow">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Start to finish</p>
+        <h2 class="section-title" id="flow">The volunteer publishing flow</h2>
+        <p class="lead">From the moment someone clicks Publish to the moment a neighbor can read it, the whole trip takes about a minute, and the volunteer does not have to think about a single step past the first one.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Fill the form</h3>
+          <p>A volunteer signs in with Gmail, writes the post or event in the online form, and clicks Publish. That is the only human step.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>The site rebuilds</h3>
+          <p>That click quietly tells the site to bake itself again, the way a print shop runs a fresh batch of flyers with the new copy added.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Pages go out</h3>
+          <p>The finished pages are copied out to the host&rsquo;s computers around the world, so they sit close to whoever opens them.</p>
+        </div>
+        <div class="step">
+          <span class="num">4</span>
+          <h3>It is live</h3>
+          <p>About a minute later the post is online for everyone, with the secure padlock already in place. No one had to touch a server.</p>
+        </div>
+      </div>
+
+      <div class="steps-cta">
+        <a class="btn btn--red" href="publish-demo.html">Try the publishing demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT STAYS CURRENT ON ITS OWN -->
+  <section class="section" aria-labelledby="current">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="current">It keeps itself current</h2>
+        <p>The reason the old site looked abandoned was simple: keeping it up to date was a chore one person had to remember, and when they got busy, it froze. The new site is built so that does not happen. Every recurring date keeps itself current on its own, not just the monthly General Meeting but the working group meetings, the reading group, the regular mutual aid distributions, all of them. The site works out the next occurrence from each schedule (the General Meeting on the fourth Monday, the transit group on the second Monday, the reading group on the third Thursday, and so on) instead of waiting for a volunteer to retype them every month. The dates in this very prototype already work that way, which is why they read correctly the day you opened it and will still be correct months from now, with nobody touching them. Anything a volunteer posts on top of that is live in about a minute. And when a newcomer signs up, they get a friendly welcome on their own, with the next meeting and how to plug in.</p>
+        <p>So the site stays as alive as the chapter is, without a webmaster babysitting it, and none of it rests on one person. If the volunteer who set it up moves on, the next one keeps it running from a short written guide. That is the whole point: the work that used to quietly rot the old site is handled for you now.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SAFER / WHY CHEAP -->
+  <section class="section section--band" aria-labelledby="why">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__main">
+          <div class="prose">
+            <h2 id="why">Why this is safer</h2>
+            <p>There is no server sitting online waiting to be broken into, no database to spill, and no plugins to keep patched. The entire category of attacks that targets database-backed sites simply does not apply here, because none of those moving parts exist anymore. The host takes care of security, the padlock, and sudden traffic spikes (say, the night a campaign goes viral), so the chapter never has to.</p>
+            <h3>Why it is nearly free</h3>
+            <p>The free tiers of these services cover a chapter our size with room to spare, because keeping finished pages on a wall costs the host almost nothing. The only standing cost is the domain name, the chapter&rsquo;s web address, which runs about 12 to 15 USD a year. Everything else is 0 USD a month.</p>
+          </div>
+        </div>
+        <aside class="split__aside">
+          <div class="factbox">
+            <h3>What it costs</h3>
+            <dl class="meta-list">
+              <div><dt>Hosting</dt><dd>0 USD</dd></div>
+              <div><dt>Editor (CMS)</dt><dd>0 USD on the free tier</dd></div>
+              <div><dt>Domain name</dt><dd>About 12 to 15 USD a year</dd></div>
+              <div><dt>Running total</dt><dd>About 1 USD a month</dd></div>
+            </dl>
+          </div>
+          <div class="callout callout--red">
+            <span class="clabel">Who could break it</span>
+            <p>Editors only ever touch the <strong>content</strong>: the words, the photos, the event dates. The <strong>layout</strong> is code that lives somewhere volunteers never see and never need to. So a typo in a post can never take the site down, and there is no &ldquo;wrong button&rdquo; that breaks the design.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Fair questions</p>
+        <h2 class="section-title" id="faq-h">The questions members ask</h2>
+        <p class="lead">Short, plain answers to the things that come up whenever the chapter talks about changing how the site runs.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Do we need someone technical to run it day to day?</summary>
+          <div class="fa"><p>No. Day to day, running the site means writing posts and adding events, and that is a form anyone who can use email can fill out. There is nothing to maintain, patch, or restart between posts.</p></div>
+        </details>
+        <details>
+          <summary>What if Cloudflare or Sanity disappears?</summary>
+          <div class="fa"><p>The site is just files kept in the chapter&rsquo;s own repository (its own copy of everything). If a service ever changed its terms or shut down, those same files could be handed to another host, the same way you could pin your flyer to a different public board.</p></div>
+        </details>
+        <details>
+          <summary>What about our .org domain?</summary>
+          <div class="fa"><p>The chapter keeps the domain name and simply points it at the new host, the way you would forward your mail to a new address. The old site stays up the whole time and the switch only happens once the new one is ready.</p></div>
+        </details>
+        <details>
+          <summary>Can we still use Action Network?</summary>
+          <div class="fa"><p>Yes. The RSVP and sign-up forms connect straight to Action Network, just as they do now, so the chapter&rsquo;s event and contact lists keep working exactly the same.</p></div>
+        </details>
+        <details>
+          <summary>Is our content locked in?</summary>
+          <div class="fa"><p>No. Everything the chapter writes can be exported out at any time. The content belongs to the chapter, not to any one service.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING BAND -->
+  <section class="joinband on-red band--red" aria-labelledby="close-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">The short version</p>
+        <h2 class="section-title" id="close-h">A site a volunteer can run</h2>
+        <p class="jb-note">No server, no database, no plugins to patch. If you can use Gmail, you can publish, and the whole thing costs about a dollar a month. See why the chapter is making the switch.</p>
+      </div>
+      <div class="jb-actions">
+        <a class="btn" href="why-new-site.html" style="background:#fff;color:#231F20;border-color:#231F20;">Why we are rebuilding</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site on-ink">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="Knoxville Area DSA logo">
+        <p>A chapter of the Democratic Socialists of America, organizing for a Knoxville that works for working people.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="start.html">Start Here</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Working groups</h4>
+        <ul>
+          <li><a href="group-transit.html">Public Transit</a></li>
+          <li><a href="group-housing.html">Housing</a></li>
+          <li><a href="group-labor.html">Labor</a></li>
+          <li><a href="group-queer.html">Queer Liberation</a></li>
+          <li><a href="group-eco.html">Eco-Socialism</a></li>
+          <li><a href="group-political-education.html">Political Education</a></li>
+          <li><a href="get-involved.html">All groups &rsaquo;</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>For members</h4>
+        <ul>
+          <li><a href="members.html">Member resources</a></li>
+          <li><a href="documents.html">Chapter documents</a></li>
+          <li><a href="calendar.ics">Events calendar (.ics)</a></li>
+          <li><a href="contact.html">Contact the chapter</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/knoxvilledsa/">Instagram @knoxvilledsa</a></li>
+          <li><a href="https://www.facebook.com/KnoxDSA/">Facebook</a></li>
+          <li><a href="https://actionnetwork.org/groups/knoxville-dsa">Action Network</a></li>
+          <li><a href="https://www.dsausa.org/join">Join DSA national</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Knoxville Area DSA · Knoxville, Tennessee</span>
+      <span>Sibling chapters: Chattanooga DSA · Northeast TN DSA</span>
+    </div>
+  </div>
+</footer>
+
+<aside class="wip-bar" role="note" aria-label="Prototype work-in-progress notice">
+  <a class="wip-inner" href="about-prototype.html">
+    <span class="wip-tag">Work in progress</span>
+    <span class="wip-text">This is a design prototype, not the live chapter site. Some content is sample.</span>
+    <span class="wip-go">See what this is <span aria-hidden="true">&rsaquo;</span></span>
+  </a>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>

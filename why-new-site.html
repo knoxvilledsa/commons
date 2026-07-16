@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/*__theme_param__*/(function(){try{var p=new URLSearchParams(location.search).get("theme");if(p==="dark"||p==="light"){localStorage.setItem("knoxdsa-theme",p);}}catch(e){}})();</script>
+<script>(function(){try{var k='knoxdsa-theme';var s=localStorage.getItem(k);var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why a New Site · Knoxville Area DSA</title>
+<meta name="description" content="The case for rebuilding knoxvilledsa.org: the current site looks dormant and is a maintenance liability. A new static site is alive, safe, and about 0 USD per month.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- share metadata -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#EC1F27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Knoxville Area DSA">
+<meta property="og:title" content="Why a New Site · Knoxville Area DSA">
+<meta property="og:description" content="The case for rebuilding knoxvilledsa.org: the current site looks dormant and is a maintenance liability. A new static site is alive, safe, and about 0 USD per month.">
+<meta property="og:image" content="assets/og-card.svg">
+<meta property="og:url" content="https://knoxvilledsa.org/why-new-site.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a New Site · Knoxville Area DSA">
+<meta name="twitter:description" content="The case for rebuilding knoxvilledsa.org: the current site looks dormant and is a maintenance liability. A new static site is alive, safe, and about 0 USD per month.">
+<meta name="twitter:image" content="assets/og-card.svg">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="meta-side" aria-hidden="true"></aside>
+
+<div class="proto-ribbon" role="region" aria-label="Prototype notice">
+  <div class="wrap">
+    <span class="prk">Prototype</span>
+    <span class="prtext">A design preview of a new Knoxville DSA website. Some content is sample, marked where shown.</span>
+    <a class="prlink" href="about-prototype.html">What is this?</a>
+    <button class="pr-x" type="button" data-ribbon-dismiss aria-label="Dismiss prototype notice">Dismiss</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html" aria-label="Knoxville Area DSA home">
+      <img class="brand-logo logo-light" src="assets/logo-black.png" alt="Knoxville Area DSA logo">
+      <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="" aria-hidden="true">
+      <span>
+        <span class="b-name">Knoxville Area DSA</span>
+        <span class="b-sub">Democratic Socialists of America</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="start.html">Start Here</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <a class="btn btn--red nav-cta desktop" href="join.html">Join</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+        <span class="tt-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Toggle theme</span>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="start.html">Start Here</a>
+        <a href="join.html">Join</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a class="mm-cta" href="join.html">Join the chapter</a>
+        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+          <span class="tt-label-dark">Switch to dark</span><span class="tt-label-light">Switch to light</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- BULLETIN STRIP -->
+<div class="bulletin on-ink" role="region" aria-label="Next meeting">
+  <div class="wrap">
+    <span class="bdot" aria-hidden="true"></span>
+    <span class="blabel">Next meeting</span>
+    <span class="bcount" data-countdown aria-live="polite">In 4 weeks</span><span class="bsep" aria-hidden="true">·</span>
+    <span data-meeting-date>Mon Jul 27</span><span class="bsep" aria-hidden="true">·</span>
+    <span>6:00 PM</span><span class="bsep" aria-hidden="true">·</span>
+    <span>Online + in person (hybrid)</span><span class="bsep" aria-hidden="true">·</span>
+    <span>All welcome</span>
+    <a class="bdetails" href="events.html">Details <span class="arrow" aria-hidden="true">&rsaquo;</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEAD -->
+  <section class="page-head" aria-labelledby="ph">
+    <div class="wrap">
+      <p class="eyebrow">The case for a rebuild</p>
+      <h1 id="ph">Why a new site</h1>
+      <p class="lead">A website is the chapter’s front door. Right now it quietly tells visitors the chapter is gone. It does not have to.</p>
+    </div>
+  </section>
+
+  <!-- THE CORE ARGUMENT -->
+  <section class="section" aria-labelledby="argument">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="argument">The first thing a neighbor sees</h2>
+        <p>The current knoxvilledsa.org has not kept pace with the chapter: its events page and blog have gone stale. So a curious neighbor who lands there reads “this chapter is inactive” before reading a single word about what we do.</p>
+        <p>It gets worse the moment they try to act on the impulse. The Contact page is not really a page at all, it is a brittle JavaScript mailto link that does nothing about half the time, so reaching out is a coin flip at the exact instant someone finally wanted to. It should just be a simple contact form. The Join link sits only in the footer, where almost no one looks. The people most likely to show up are the ones we are quietly turning away.</p>
+        <p>None of this reflects the chapter. We meet every month, our working groups are active across East Tennessee, and people are organizing real campaigns. A rebuild fixes the impression and the upkeep at once, so the site finally matches the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section section--band" aria-labelledby="vs-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Side by side</p>
+        <h2 class="section-title" id="vs-h">The current site vs the new site</h2>
+        <p class="lead">The same seven problems, line by line, and what the rebuild does about each one.</p>
+      </div>
+
+      <div class="vstable">
+        <div class="vsrow vsrow--head">
+          <div class="vscell vscell--old">
+            <span class="vlabel">The current site</span>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel">The new site</span>
+          </div>
+        </div>
+        <div class="vsrow">
+          <div class="vscell vscell--old">
+            <span class="vlabel"><span class="vmark vmark--x" aria-hidden="true">&#10005;</span> Contact page</span>
+            <p>A brittle JavaScript mailto link that fails about half the time. It should be a form.</p>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel"><span class="vmark vmark--check" aria-hidden="true">&#10003;</span> Contact page</span>
+            <p>A working contact form, no dead ends.</p>
+          </div>
+        </div>
+        <div class="vsrow">
+          <div class="vscell vscell--old">
+            <span class="vlabel"><span class="vmark vmark--x" aria-hidden="true">&#10005;</span> Events</span>
+            <p>Frozen at December 2021.</p>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel"><span class="vmark vmark--check" aria-hidden="true">&#10003;</span> Events</span>
+            <p>A live calendar with a countdown to the next meeting.</p>
+          </div>
+        </div>
+        <div class="vsrow">
+          <div class="vscell vscell--old">
+            <span class="vlabel"><span class="vmark vmark--x" aria-hidden="true">&#10005;</span> Blog</span>
+            <p>Stuck on one post from 2023.</p>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel"><span class="vmark vmark--check" aria-hidden="true">&#10003;</span> News feed</span>
+            <p>A feed any volunteer can post to from a form.</p>
+          </div>
+        </div>
+        <div class="vsrow">
+          <div class="vscell vscell--old">
+            <span class="vlabel"><span class="vmark vmark--x" aria-hidden="true">&#10005;</span> Join</span>
+            <p>Buried in the footer.</p>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel"><span class="vmark vmark--check" aria-hidden="true">&#10003;</span> Join</span>
+            <p>In the nav, the hero, and mid-page.</p>
+          </div>
+        </div>
+        <div class="vsrow">
+          <div class="vscell vscell--old">
+            <span class="vlabel"><span class="vmark vmark--x" aria-hidden="true">&#10005;</span> Hosting</span>
+            <p>A dynamic site that needs constant hands-on upkeep.</p>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel"><span class="vmark vmark--check" aria-hidden="true">&#10003;</span> Hosting</span>
+            <p>Static files on a managed host, nothing to patch.</p>
+          </div>
+        </div>
+        <div class="vsrow">
+          <div class="vscell vscell--old">
+            <span class="vlabel"><span class="vmark vmark--x" aria-hidden="true">&#10005;</span> Images</span>
+            <p>Served without a CDN.</p>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel"><span class="vmark vmark--check" aria-hidden="true">&#10003;</span> Images</span>
+            <p>A global CDN with automatic HTTPS.</p>
+          </div>
+        </div>
+        <div class="vsrow">
+          <div class="vscell vscell--old">
+            <span class="vlabel"><span class="vmark vmark--x" aria-hidden="true">&#10005;</span> On a phone</span>
+            <p>Clunky on the screen most people use.</p>
+          </div>
+          <div class="vscell vscell--new">
+            <span class="vlabel"><span class="vmark vmark--check" aria-hidden="true">&#10003;</span> On a phone</span>
+            <p>Mobile-first, built for the screen most people use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFE AND ALMOST FREE -->
+  <section class="section" aria-labelledby="safe">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="safe">Safe, and almost free</h2>
+        <p>The new stack is Astro plus a free Sanity CMS plus Cloudflare Pages, which comes to about 0 USD per month plus the cost of the domain. There is no server, no database, and no plugins for the chapter to secure or patch, which removes the current site’s single biggest liability.</p>
+        <p>Editing is just as plain. A volunteer who can use Gmail can publish, by filling in a structured form and pressing one button. See <a href="publish-demo.html">how a volunteer publishes</a>, or read <a href="hosting.html">how it is hosted, in plain terms</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- A SMALL PROOF -->
+  <section class="section section--band" aria-labelledby="proof">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Care in the details</p>
+        <h2 class="section-title" id="proof">Even the error page is handled</h2>
+      </div>
+      <div class="callout callout--red">
+        <span class="clabel">A small proof</span>
+        <p>On the new site, even the page no one is supposed to reach gets handled with care. A wrong link does not dump a visitor into a broken server error; it lands them on a custom page in the chapter’s own style, with a way back in.</p>
+        <p><a class="tlink" href="404.html">See the 404 page</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT THIS PROTOTYPE SHOWS -->
+  <section class="section" aria-labelledby="proto">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="proto">What this prototype shows</h2>
+        <p>Everything you are clicking through is a working front-end mockup, not the live site. It is here to show the potential of a rebuild in the chapter’s real voice and colors, so the decision is about something you can see rather than a pitch on paper. For more on what is real and what is sample, read <a href="about-prototype.html">about this prototype</a>, or look at how <a href="campaigns.html">campaigns</a> could be tracked in public.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN BAND -->
+  <section class="joinband on-red band--red" aria-labelledby="join-h2">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Membership</p>
+        <h2 class="section-title" id="join-h2">A site worth the chapter behind it</h2>
+        <p class="jb-note">The work is already happening. The site should say so. Join Knoxville DSA and help build the version of this that goes live.</p>
+      </div>
+      <div class="jb-actions">
+        <a class="btn" href="join.html" style="background:#fff;color:#231F20;border-color:#231F20;">Join Knoxville DSA</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site on-ink">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="Knoxville Area DSA logo">
+        <p>A chapter of the Democratic Socialists of America, organizing for a Knoxville that works for working people.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="start.html">Start Here</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Working groups</h4>
+        <ul>
+          <li><a href="group-transit.html">Public Transit</a></li>
+          <li><a href="group-housing.html">Housing</a></li>
+          <li><a href="group-labor.html">Labor</a></li>
+          <li><a href="group-queer.html">Queer Liberation</a></li>
+          <li><a href="group-eco.html">Eco-Socialism</a></li>
+          <li><a href="group-political-education.html">Political Education</a></li>
+          <li><a href="get-involved.html">All groups &rsaquo;</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>For members</h4>
+        <ul>
+          <li><a href="members.html">Member resources</a></li>
+          <li><a href="documents.html">Chapter documents</a></li>
+          <li><a href="calendar.ics">Events calendar (.ics)</a></li>
+          <li><a href="contact.html">Contact the chapter</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/knoxvilledsa/">Instagram @knoxvilledsa</a></li>
+          <li><a href="https://www.facebook.com/KnoxDSA/">Facebook</a></li>
+          <li><a href="https://actionnetwork.org/groups/knoxville-dsa">Action Network</a></li>
+          <li><a href="https://www.dsausa.org/join">Join DSA national</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Knoxville Area DSA · Knoxville, Tennessee</span>
+      <span>Sibling chapters: Chattanooga DSA · Northeast TN DSA</span>
+    </div>
+  </div>
+</footer>
+
+<aside class="wip-bar" role="note" aria-label="Prototype work-in-progress notice">
+  <a class="wip-inner" href="about-prototype.html">
+    <span class="wip-tag">Work in progress</span>
+    <span class="wip-text">This is a design prototype, not the live chapter site. Some content is sample.</span>
+    <span class="wip-go">See what this is <span aria-hidden="true">&rsaquo;</span></span>
+  </a>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>

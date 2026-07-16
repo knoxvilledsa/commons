@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/*__theme_param__*/(function(){try{var p=new URLSearchParams(location.search).get("theme");if(p==="dark"||p==="light"){localStorage.setItem("knoxdsa-theme",p);}}catch(e){}})();</script>
+<script>(function(){try{var k='knoxdsa-theme';var s=localStorage.getItem(k);var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events · Knoxville Area DSA</title>
+<meta name="description" content="Upcoming Knoxville Area DSA meetings and events. A monthly General Meeting on the 4th Monday, working group meetings, and actions. New-member-friendly events are marked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- share metadata -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#EC1F27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Knoxville Area DSA">
+<meta property="og:title" content="Events · Knoxville Area DSA">
+<meta property="og:description" content="Upcoming Knoxville Area DSA meetings and events. A monthly General Meeting on the 4th Monday, working group meetings, and actions. New-member-friendly events are marked.">
+<meta property="og:image" content="assets/og-card.svg">
+<meta property="og:url" content="https://knoxvilledsa.org/events.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Events · Knoxville Area DSA">
+<meta name="twitter:description" content="Upcoming Knoxville Area DSA meetings and events. A monthly General Meeting on the 4th Monday, working group meetings, and actions. New-member-friendly events are marked.">
+<meta name="twitter:image" content="assets/og-card.svg">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="proto-ribbon" role="region" aria-label="Prototype notice">
+  <div class="wrap">
+    <span class="prk">Prototype</span>
+    <span class="prtext">A design preview of a new Knoxville DSA website. Some content is sample, marked where shown.</span>
+    <a class="prlink" href="about-prototype.html">What is this?</a>
+    <button class="pr-x" type="button" data-ribbon-dismiss aria-label="Dismiss prototype notice">Dismiss</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html" aria-label="Knoxville Area DSA home">
+      <img class="brand-logo logo-light" src="assets/logo-black.png" alt="Knoxville Area DSA logo">
+      <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="" aria-hidden="true">
+      <span>
+        <span class="b-name">Knoxville Area DSA</span>
+        <span class="b-sub">Democratic Socialists of America</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="start.html">Start Here</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html" aria-current="page">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <a class="btn btn--red nav-cta desktop" href="join.html">Join</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+        <span class="tt-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Toggle theme</span>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="start.html">Start Here</a>
+        <a href="join.html">Join</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a class="mm-cta" href="join.html">Join the chapter</a>
+        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+          <span class="tt-label-dark">Switch to dark</span><span class="tt-label-light">Switch to light</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- BULLETIN STRIP -->
+<div class="bulletin on-ink" role="region" aria-label="Next meeting">
+  <div class="wrap">
+    <span class="bdot" aria-hidden="true"></span>
+    <span class="blabel">Next meeting</span>
+    <span class="bcount" data-countdown aria-live="polite">In 4 weeks</span><span class="bsep" aria-hidden="true">·</span>
+    <span data-meeting-date>Mon Jul 27</span><span class="bsep" aria-hidden="true">·</span>
+    <span>6:00 PM</span><span class="bsep" aria-hidden="true">·</span>
+    <span>Online + in person (hybrid)</span><span class="bsep" aria-hidden="true">·</span>
+    <span>All welcome</span>
+    <a class="bdetails" href="events.html">Details <span class="arrow" aria-hidden="true">&rsaquo;</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEAD -->
+  <section class="page-head" aria-labelledby="ph">
+    <div class="wrap">
+      <p class="eyebrow">What is on</p>
+      <h1 id="ph">Upcoming events</h1>
+      <p class="lead">The chapter meets every month, and between meetings the working groups gather to do the real work, alongside actions across East Tennessee. Events that are friendly to first-timers are marked, so you always know where it is easy to walk in.</p>
+      <div class="actions">
+        <a class="btn btn--ghost-light" href="#next">See the next meeting</a>
+        <a class="btn btn--ghost-light" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP on Action Network</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT GENERAL MEETING SPOTLIGHT -->
+  <section class="section" id="next" aria-labelledby="next-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Open to the public</p>
+        <h2 class="section-title" id="next-h2">The next General Meeting</h2>
+        <p class="lead">Once a month the whole chapter comes together to make decisions, hear from the working groups, and plan what is next. You do not have to be a member to come, and you can join from your couch.</p>
+      </div>
+      <div class="meeting-card">
+        <div class="meeting-date" aria-hidden="true">
+          <span class="mo" data-recur="4MO" data-fmt="mo">Jul</span>
+          <span class="dy" data-recur="4MO" data-fmt="dy">27</span>
+        </div>
+        <div class="meeting-body">
+          <span class="chip">New members welcome</span>
+          <h3><span data-recur="4MO" data-fmt="monthname">July</span> General Meeting</h3>
+          <p class="meeting-meta"><span data-recur="4MO" data-fmt="longyear">Monday, July 27, 2026</span> · 6:00 PM · Hybrid: online via Zoom plus an in-person spot announced with the agenda</p>
+          <p class="body">General meetings are how Knoxville DSA decides things together, from endorsements to budgets to which fights to take on next. Come a few minutes early, say hello, and someone will walk you through how it runs, in the room and in the chat.</p>
+          <p class="greeter">First time? New folks are greeted and oriented before business starts, so you are never left guessing what is happening.</p>
+          <a class="btn btn--red" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP on Action Network</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE FULL LIST -->
+  <section class="section section--band" aria-labelledby="list-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">On the calendar</p>
+        <h2 class="section-title" id="list-h2">What is coming up</h2>
+        <p class="lead">Meetings, study, mutual aid, and a little joy. Look for the new-member flag for the easiest places to start.</p>
+      </div>
+
+      <p class="proto-note">Prototype calendar. The recurring General Meeting cadence is real (the 4th Monday, about 6:00 PM). The specific working group sessions, actions, and socials listed below are sample examples.</p>
+
+      <div class="event-list">
+
+        <div class="event">
+          <div class="when">
+            <span class="mo" data-recur="2MO" data-fmt="mo">Jul</span>
+            <span class="dy" data-recur="2MO" data-fmt="dy">13</span>
+            <span class="yr" data-recur="2MO" data-fmt="yr">2026</span>
+          </div>
+          <div class="ebody">
+            <div class="etags">
+              <span class="tag tag--teal">Working group</span>
+            </div>
+            <h3>Public Transportation working group</h3>
+            <p class="ewhen"><span data-recur="2MO" data-fmt="long">Monday, July 13</span> · 2nd Monday of the month</p>
+            <p>The transit group meets on its standing 2nd Monday to keep pushing for frequent, affordable KAT service for everyone who rides. Riders and newcomers are welcome to sit in.</p>
+            <div class="eactions">
+              <a class="btn btn--red" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP</a>
+              <a class="btn" href="group-transit.html">Group details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="when">
+            <span class="mo" data-recur="3TH" data-fmt="mo">Jul</span>
+            <span class="dy" data-recur="3TH" data-fmt="dy">16</span>
+            <span class="yr" data-recur="3TH" data-fmt="yr">2026</span>
+          </div>
+          <div class="ebody">
+            <div class="etags">
+              <span class="tag tag--teal">Political education</span>
+              <span class="flag">New members welcome</span>
+            </div>
+            <h3>Little Red Schoolhouse reading group</h3>
+            <p class="ewhen"><span data-recur="3TH" data-fmt="long">Thursday, July 16</span> · 7:00 PM · Online via Zoom</p>
+            <p>An evening session of the chapter’s reading group, open to members and the curious alike. No prior reading required to drop in, and the link goes out with the RSVP.</p>
+            <div class="eactions">
+              <a class="btn btn--red" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP</a>
+              <a class="btn" href="group-political-education.html">Group details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="when">
+            <span class="mo" data-recur="3SA" data-fmt="mo">Jul</span>
+            <span class="dy" data-recur="3SA" data-fmt="dy">18</span>
+            <span class="yr" data-recur="3SA" data-fmt="yr">2026</span>
+          </div>
+          <div class="ebody">
+            <div class="etags">
+              <span class="tag tag--teal">Mutual aid</span>
+              <span class="flag">New members welcome</span>
+            </div>
+            <h3>Saturday mutual aid distribution</h3>
+            <p class="ewhen"><span data-recur="3SA" data-fmt="long">Saturday, July 18</span> · 11:00 AM · Location shared with the RSVP</p>
+            <p>Neighbors meeting neighbors’ needs directly, with no strings and no means test. A hands-on way to plug in for an afternoon, and an easy first shift if you have never organized before.</p>
+            <div class="eactions">
+              <a class="btn btn--red" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP</a>
+              <a class="btn" href="group-mutual-aid.html">Group details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="when">
+            <span class="mo" data-recur="4FR" data-fmt="mo">Jul</span>
+            <span class="dy" data-recur="4FR" data-fmt="dy">24</span>
+            <span class="yr" data-recur="4FR" data-fmt="yr">2026</span>
+          </div>
+          <div class="ebody">
+            <div class="etags">
+              <span class="tag tag--teal">Social</span>
+              <span class="flag">New members welcome</span>
+            </div>
+            <h3>Queer Liberation forming social</h3>
+            <p class="ewhen"><span data-recur="4FR" data-fmt="long">Friday, July 24</span> · 6:30 PM · In person, spot shared with the RSVP</p>
+            <p>The Queer Liberation group is still forming, and this casual hangout is where it takes shape. Bring yourself, meet folks, and help decide what LGBTQ+ defense, care, and joy look like here.</p>
+            <div class="eactions">
+              <a class="btn btn--red" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP</a>
+              <a class="btn" href="group-queer.html">Group details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="when">
+            <span class="mo" data-recur="4MO" data-fmt="mo">Jul</span>
+            <span class="dy" data-recur="4MO" data-fmt="dy">27</span>
+            <span class="yr" data-recur="4MO" data-fmt="yr">2026</span>
+          </div>
+          <div class="ebody">
+            <div class="etags">
+              <span class="tag tag--red">General Meeting</span>
+              <span class="flag">New members welcome</span>
+            </div>
+            <h3><span data-recur="4MO" data-fmt="monthname">July</span> General Meeting</h3>
+            <p class="ewhen"><span data-recur="4MO" data-fmt="long">Monday, July 27</span> · 6:00 PM · Hybrid: online via Zoom plus an in-person spot announced with the agenda</p>
+            <p>The monthly meeting of the whole chapter. New folks are greeted and oriented first, then the chapter takes up its business together. Open to the public, and you can join online.</p>
+            <div class="eactions">
+              <a class="btn btn--red" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP</a>
+              <a class="btn" href="start.html">New here? Start here</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEVER MISS ONE -->
+  <section class="section section--ink on-ink" aria-labelledby="miss-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Stay in the loop</p>
+        <h2 class="section-title" id="miss-h2">Never miss one</h2>
+        <p class="lead">Three easy ways to keep every meeting and action in front of you.</p>
+      </div>
+      <div class="infra-grid">
+        <a class="infra" href="calendar.ics">
+          <h3>Subscribe to the calendar</h3>
+          <p>Add every meeting and action to your phone or laptop in one tap.</p>
+          <span class="igo">Subscribe &rsaquo;</span>
+        </a>
+        <a class="infra" href="https://actionnetwork.org/groups/knoxville-dsa">
+          <h3>RSVP on Action Network</h3>
+          <p>Tell us you are coming and get the meeting links and reminders.</p>
+          <span class="igo">Open Action Network &rsaquo;</span>
+        </a>
+        <a class="infra" href="https://www.instagram.com/knoxvilledsa/">
+          <h3>Follow on Instagram</h3>
+          <p>Last-minute changes, actions, and chapter life at @knoxvilledsa.</p>
+          <span class="igo">Follow &rsaquo;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CADENCE NOTE -->
+  <section class="section" aria-labelledby="cadence-h2">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__main">
+          <div class="prose">
+            <h2 id="cadence-h2">How the schedule works</h2>
+            <p>The General Meeting lands on the 4th Monday of every month at about 6:00 PM, hybrid, so you can come in person or join from home. The next one is <span data-recur="4MO" data-fmt="longyear">Monday, July 27, 2026</span>, and it lands every 4th Monday after that.</p>
+            <p>Working groups set their own schedules. The Public Transportation group, for example, meets on its standing 2nd Monday, while others meet as announced. The Steering Committee meets the 2nd Sunday of each month to keep the chapter running; that one is internal rather than a public on-ramp.</p>
+          </div>
+        </div>
+        <aside class="split__aside">
+          <div class="callout">
+            <span class="clabel">About the hybrid format</span>
+            <p>Every General Meeting runs online via Zoom and at an in-person spot announced with the agenda. <strong>RSVP on Action Network and the meeting link comes to you</strong>, so you can join from your couch or in the room.</p>
+          </div>
+          <div class="factbox">
+            <h3>Find your working group</h3>
+            <p class="form-note" style="margin-bottom:16px;">Want a standing thing to show up to between General Meetings? The working groups are the on-ramp.</p>
+            <a class="btn btn--red" href="get-involved.html">See the working groups</a>
+            <a class="btn" href="calendar.ics">Subscribe to the calendar</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN BAND -->
+  <section class="joinband on-red band--red" aria-labelledby="join-h2">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Membership</p>
+        <h2 class="section-title" id="join-h2">See you at the next one</h2>
+        <p class="jb-note">Events are open to everyone. Joining DSA is how you get a vote in where the chapter goes next. Dues start where you can, waivers no questions asked.</p>
+      </div>
+      <div class="jb-actions">
+        <a class="btn" href="join.html" style="background:#fff;color:#231F20;border-color:#231F20;">Join Knoxville DSA</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site on-ink">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="Knoxville Area DSA logo">
+        <p>A chapter of the Democratic Socialists of America, organizing for a Knoxville that works for working people.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="start.html">Start Here</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Working groups</h4>
+        <ul>
+          <li><a href="group-transit.html">Public Transit</a></li>
+          <li><a href="group-housing.html">Housing</a></li>
+          <li><a href="group-labor.html">Labor</a></li>
+          <li><a href="group-queer.html">Queer Liberation</a></li>
+          <li><a href="group-eco.html">Eco-Socialism</a></li>
+          <li><a href="group-political-education.html">Political Education</a></li>
+          <li><a href="get-involved.html">All groups &rsaquo;</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>For members</h4>
+        <ul>
+          <li><a href="members.html">Member resources</a></li>
+          <li><a href="documents.html">Chapter documents</a></li>
+          <li><a href="calendar.ics">Events calendar (.ics)</a></li>
+          <li><a href="contact.html">Contact the chapter</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/knoxvilledsa/">Instagram @knoxvilledsa</a></li>
+          <li><a href="https://www.facebook.com/KnoxDSA/">Facebook</a></li>
+          <li><a href="https://actionnetwork.org/groups/knoxville-dsa">Action Network</a></li>
+          <li><a href="https://www.dsausa.org/join">Join DSA national</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Knoxville Area DSA · Knoxville, Tennessee</span>
+      <span>Sibling chapters: Chattanooga DSA · Northeast TN DSA</span>
+    </div>
+  </div>
+</footer>
+
+<aside class="wip-bar" role="note" aria-label="Prototype work-in-progress notice">
+  <a class="wip-inner" href="about-prototype.html">
+    <span class="wip-tag">Work in progress</span>
+    <span class="wip-text">This is a design prototype, not the live chapter site. Some content is sample.</span>
+    <span class="wip-go">See what this is <span aria-hidden="true">&rsaquo;</span></span>
+  </a>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>

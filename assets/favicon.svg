@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Knoxville Area DSA">
+  <rect width="64" height="64" fill="#EC1F27"/>
+  <!-- faint screenprint overprint, echoing the house style -->
+  <rect x="3" y="3" width="64" height="64" fill="#231F20" opacity="0.16"/>
+  <rect width="64" height="64" fill="#EC1F27"/>
+  <!-- heavy K -->
+  <path d="M18 12 H27 V29 L41 12 H53 L37 31 L54 52 H42 L29 35 L27 38 V52 H18 Z" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/*__theme_param__*/(function(){try{var p=new URLSearchParams(location.search).get("theme");if(p==="dark"||p==="light"){localStorage.setItem("knoxdsa-theme",p);}}catch(e){}})();</script>
+<script>(function(){try{var k='knoxdsa-theme';var s=localStorage.getItem(k);var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knoxville Area DSA · Democratic Socialists of America</title>
+<meta name="description" content="Knoxville Area DSA. We are your neighbors, organizing for housing, public transit, and a fair deal for working people across East Tennessee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- share metadata -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#EC1F27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Knoxville Area DSA">
+<meta property="og:title" content="Knoxville Area DSA · Democratic Socialists of America">
+<meta property="og:description" content="Knoxville Area DSA. We are your neighbors, organizing for housing, public transit, and a fair deal for working people across East Tennessee.">
+<meta property="og:image" content="assets/og-card.svg">
+<meta property="og:url" content="https://knoxvilledsa.org/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Knoxville Area DSA · Democratic Socialists of America">
+<meta name="twitter:description" content="Knoxville Area DSA. We are your neighbors, organizing for housing, public transit, and a fair deal for working people across East Tennessee.">
+<meta name="twitter:image" content="assets/og-card.svg">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="proto-ribbon" role="region" aria-label="Prototype notice">
+  <div class="wrap">
+    <span class="prk">Prototype</span>
+    <span class="prtext">A design preview of a new Knoxville DSA website. Some content is sample, marked where shown.</span>
+    <a class="prlink" href="about-prototype.html">What is this?</a>
+    <button class="pr-x" type="button" data-ribbon-dismiss aria-label="Dismiss prototype notice">Dismiss</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html" aria-label="Knoxville Area DSA home">
+      <img class="brand-logo logo-light" src="assets/logo-black.png" alt="Knoxville Area DSA logo">
+      <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="" aria-hidden="true">
+      <span>
+        <span class="b-name">Knoxville Area DSA</span>
+        <span class="b-sub">Democratic Socialists of America</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="start.html">Start Here</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <a class="btn btn--red nav-cta desktop" href="join.html">Join</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+        <span class="tt-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Toggle theme</span>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="start.html">Start Here</a>
+        <a href="join.html">Join</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a class="mm-cta" href="join.html">Join the chapter</a>
+        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+          <span class="tt-label-dark">Switch to dark</span><span class="tt-label-light">Switch to light</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- BULLETIN STRIP -->
+<div class="bulletin on-ink" role="region" aria-label="Next meeting">
+  <div class="wrap">
+    <span class="bdot" aria-hidden="true"></span>
+    <span class="blabel">Next meeting</span>
+    <span class="bcount" data-countdown aria-live="polite">In 4 weeks</span><span class="bsep" aria-hidden="true">·</span>
+    <span data-meeting-date>Mon Jul 27</span><span class="bsep" aria-hidden="true">·</span>
+    <span>6:00 PM</span><span class="bsep" aria-hidden="true">·</span>
+    <span>Online + in person (hybrid)</span><span class="bsep" aria-hidden="true">·</span>
+    <span>All welcome</span>
+    <a class="bdetails" href="events.html">Details <span class="arrow" aria-hidden="true">&rsaquo;</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero on-red" aria-labelledby="hero-h1">
+    <div class="hero-ridge" aria-hidden="true">
+      <svg viewBox="0 0 1200 240" preserveAspectRatio="none" role="img">
+        <!-- Great Smoky Mountains: layered ridgelines rising behind the city -->
+        <path d="M0,240 L0,118 L130,92 L280,116 L430,80 L600,110 L770,76 L940,108 L1080,90 L1200,112 L1200,240 Z" opacity="0.5"/>
+        <path d="M0,240 L0,166 L150,146 L320,176 L470,148 L640,178 L800,146 L970,176 L1110,154 L1200,170 L1200,240 Z" opacity="0.82"/>
+      </svg>
+    </div>
+    <div class="hero-skyline" aria-hidden="true">
+      <svg viewBox="0 0 680 300" preserveAspectRatio="xMidYMax meet" role="img">
+        <!-- Downtown Knoxville skyline, traced from photographs: a church steeple, the Sunsphere, the office cluster, the two tall towers, and a Gothic spire -->
+        <rect x="0" y="288" width="680" height="12"/>
+        <path d="M30,288 L36,156 L42,288 Z"/>
+        <rect x="20" y="254" width="22" height="34"/>
+        <rect x="48" y="246" width="40" height="42"/>
+        <rect x="92" y="226" width="34" height="62"/>
+        <rect x="128" y="242" width="26" height="46"/>
+        <!-- the Sunsphere: a large faceted sphere on a slender, base-flared lattice tower -->
+        <path d="M194,145 L191,246 L174,288 L236,288 L219,246 L216,145 Z"/>
+        <circle cx="205" cy="108" r="37"/>
+        <!-- office cluster -->
+        <rect x="244" y="216" width="46" height="72"/>
+        <rect x="292" y="232" width="28" height="56"/>
+        <rect x="322" y="218" width="34" height="70"/>
+        <rect x="358" y="238" width="26" height="50"/>
+        <rect x="386" y="222" width="26" height="66"/>
+        <!-- tall tower: flat top with twin antennas -->
+        <rect x="420" y="116" width="40" height="172"/>
+        <rect x="428" y="90" width="3" height="26"/>
+        <rect x="449" y="96" width="3" height="20"/>
+        <!-- tall tower: stepped top -->
+        <rect x="468" y="150" width="40" height="138"/>
+        <rect x="476" y="132" width="24" height="18"/>
+        <!-- modern blocks -->
+        <rect x="516" y="208" width="64" height="80"/>
+        <rect x="584" y="224" width="40" height="64"/>
+        <!-- Gothic church tower with a pointed spire -->
+        <rect x="636" y="198" width="26" height="90"/>
+        <path d="M634,198 L649,170 L664,198 Z"/>
+      </svg>
+    </div>
+    <div class="wrap">
+      <p class="eyebrow">Democratic Socialists of America · Knoxville, Tennessee</p>
+      <h1 class="display" id="hero-h1">Another Knoxville is possible</h1>
+      <p class="lead">We are your neighbors, organizing for housing, public transit, and a fair deal for working people across East Tennessee. No experience needed to start.</p>
+      <p class="ticker" data-ticker aria-label="Happening in the chapter this week">
+        <span class="tlabel"><span class="tdot" aria-hidden="true"></span>This week</span>
+        <span class="titems">
+          <span class="titem is-on">Little Red Schoolhouse reading group, Sunday</span>
+          <span class="titem">Tenant clinic drop-in, Thursday evening</span>
+          <span class="titem">Public Transportation working group, 2nd Monday</span>
+          <span class="titem">Three new members joined this month</span>
+        </span>
+      </p>
+      <div class="actions">
+        <a class="btn btn--ghost-light" href="join.html" style="background:#fff;color:#231F20;border-color:#231F20;">Join the chapter</a>
+        <a class="btn btn--ghost-light" href="start.html">New here? Start here</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ISSUE TILES -->
+  <section class="section" aria-labelledby="issues-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What we organize for</p>
+        <h2 class="section-title" id="issues-h2">The fights we are in</h2>
+      </div>
+      <p class="lead">Not just topics, but live fights: campaigns we are running, actions we are turning out for, and the everyday organizing that keeps the chapter moving. Find a working group below to plug into any of them.</p>
+      <div class="tile-grid">
+        <a class="tile" href="campaigns.html">
+          <span class="kicker">Campaign</span>
+          <h3>Defend KAT bus service</h3>
+          <p>Frequent, affordable, dignified transit for everyone who rides. We pack City Council when service is on the line.</p>
+          <span class="tgo">See the campaign &rsaquo;</span>
+        </a>
+        <a class="tile" href="campaigns.html">
+          <span class="kicker">Campaign</span>
+          <h3>Housing as a human right</h3>
+          <p>Tenant power, eviction defense, and a clinic that helps neighbors answer eviction notices.</p>
+          <span class="tgo">See the campaign &rsaquo;</span>
+        </a>
+        <a class="tile" href="events.html">
+          <span class="kicker">Upcoming action</span>
+          <h3>March with us on May Day</h3>
+          <p>Every May Day we march with workers across Knoxville. Rallies, pickets, and rapid response land on the calendar.</p>
+          <span class="tgo">See the calendar &rsaquo;</span>
+        </a>
+        <a class="tile" href="group-eco.html">
+          <span class="kicker">Campaign</span>
+          <h3>A Green New Deal for East Tennessee</h3>
+          <p>Climate and environmental justice that lands here at home, not just on paper.</p>
+          <span class="tgo">Get involved &rsaquo;</span>
+        </a>
+        <a class="tile" href="group-mutual-aid.html">
+          <span class="kicker">Ongoing</span>
+          <h3>Mutual aid, every month</h3>
+          <p>Neighbors meeting neighbors&rsquo; needs directly, no means test and no strings.</p>
+          <span class="tgo">Get involved &rsaquo;</span>
+        </a>
+        <a class="tile" href="group-queer.html">
+          <span class="kicker">Campaign</span>
+          <h3>Queer liberation in East Tennessee</h3>
+          <p>LGBTQ+ defense against state attacks, mutual care, and a visible community presence.</p>
+          <span class="tgo">Get involved &rsaquo;</span>
+        </a>
+      </div>
+      <div class="steps-cta">
+        <a class="btn btn--red" href="campaigns.html">See all our campaigns and wins &rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section section--band" aria-labelledby="steps-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">New to all of this</p>
+        <h2 class="section-title" id="steps-h2">Your first month, step by step</h2>
+        <p class="lead">You belong here. Here is the path, and you can stop in at any step.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num" aria-hidden="true">1</span>
+          <h3>Come to a meeting</h3>
+          <p>Open to all, no commitment and no dues. The next one is <span data-recur="4MO" data-fmt="short">Mon Jul 27</span>, online or in person.</p>
+        </div>
+        <div class="step">
+          <span class="num" aria-hidden="true">2</span>
+          <h3>Join DSA</h3>
+          <p>Dues start where you can, and waivers are available, no questions asked.</p>
+        </div>
+        <div class="step">
+          <span class="num" aria-hidden="true">3</span>
+          <h3>New Member 101</h3>
+          <p>A friendly 60-minute intro to the chapter, held every month.</p>
+        </div>
+        <div class="step">
+          <span class="num" aria-hidden="true">4</span>
+          <h3>Meet an organizer</h3>
+          <p>A relaxed one-to-one to help you find the working group that fits.</p>
+        </div>
+      </div>
+      <div class="steps-cta">
+        <a class="btn" href="start.html">See the full Start Here guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIRST MEETING CARD -->
+  <section class="section" aria-labelledby="meeting-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Open to the public</p>
+        <h2 class="section-title" id="meeting-h2">Your first meeting</h2>
+      </div>
+      <div class="meeting-card">
+        <div class="meeting-date" aria-hidden="true">
+          <span class="mo" data-recur="4MO" data-fmt="mo">Jul</span>
+          <span class="dy" data-recur="4MO" data-fmt="dy">27</span>
+        </div>
+        <div class="meeting-body">
+          <span class="chip">New members welcome</span>
+          <h3><span data-recur="4MO" data-fmt="monthname">July</span> General Meeting</h3>
+          <p class="meeting-meta">Monday · 6:00 PM · Hybrid: online via Zoom plus an in-person spot announced with the agenda</p>
+          <p class="body">General meetings are how the chapter makes decisions together. Come early, say hello, and see what we are working on. You do not have to be a member to attend, and you can join from your couch.</p>
+          <p class="greeter">First time? New folks are greeted and walked through how it works, in the room and in the chat.</p>
+          <a class="btn btn--red" href="https://actionnetwork.org/groups/knoxville-dsa">RSVP on Action Network</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="section section--band" aria-labelledby="proof-h2">
+    <div class="wrap">
+      <p class="proto-note">Sample quotes and figures. The voices and wins below are illustrative examples for the prototype: the people are invented, and the totals are not real current numbers.</p>
+      <div class="section-head">
+        <p class="eyebrow">Why people join</p>
+        <h2 class="section-title" id="proof-h2">Real neighbors, real wins</h2>
+      </div>
+
+      <div class="quote-grid">
+        <figure class="quote">
+          <span class="qmark" aria-hidden="true">&ldquo;</span>
+          <blockquote>I came to one meeting after a rough week with my landlord. A year later I help run the tenant clinic.</blockquote>
+          <figcaption class="who">
+            <span class="avatar" aria-hidden="true">DK</span>
+            <span class="wname">Dana, North Knoxville</span>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <span class="qmark" aria-hidden="true">&ldquo;</span>
+          <blockquote>I grew up here and I want it to be better. Knox DSA gave me somewhere to put that.</blockquote>
+          <figcaption class="who">
+            <span class="avatar" aria-hidden="true">MB</span>
+            <span class="wname">Marcus, Burlington</span>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <span class="qmark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Nobody cared that I had never organized anything. They handed me a clipboard and a coffee.</blockquote>
+          <figcaption class="who">
+            <span class="avatar" aria-hidden="true">PF</span>
+            <span class="wname">Priya, Fort Sanders</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="wins-head">What we have done together</p>
+      <ul class="wins">
+        <li><span class="wdate">May 2026</span><span><span class="wmid" aria-hidden="true">·</span> Forty riders packed City Council to defend KAT bus service.</span></li>
+        <li><span class="wdate">Mar 2026</span><span><span class="wmid" aria-hidden="true">·</span> The tenant clinic helped more than thirty households answer eviction notices.</span></li>
+        <li><span class="wdate">Feb 2026</span><span><span class="wmid" aria-hidden="true">·</span> A mutual aid drive moved 1,200 pounds of groceries in one weekend.</span></li>
+        <li><span class="wdate">2025</span><span><span class="wmid" aria-hidden="true">·</span> Members knocked over three thousand doors across East Knoxville.</span></li>
+      </ul>
+      <div class="steps-cta">
+        <a class="btn btn--red" href="campaigns.html">See the campaigns, the map, and the wins &rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKING GROUPS -->
+  <section class="section" aria-labelledby="wg-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Find your people</p>
+        <h2 class="section-title" id="wg-h2">Working groups you can join this week</h2>
+      </div>
+      <div class="wg-grid">
+        <div class="wg">
+          <div class="wg-top"><span class="status">Active</span></div>
+          <h3>Public Transportation</h3>
+          <p class="mission">Frequent, affordable KAT service for everyone who rides.</p>
+          <p class="meta"><span>2nd Monday · location shared when you RSVP</span><span class="em" aria-hidden="true">·</span><span>Contact the Public Transportation group</span></p>
+          <a class="tlink wg-go" href="group-transit.html">Get involved</a>
+        </div>
+        <div class="wg">
+          <div class="wg-top"><span class="status">Active</span></div>
+          <h3>Political Education</h3>
+          <p class="mission">The Little Red Schoolhouse: orientation to socialism and ongoing study.</p>
+          <p class="meta"><span>Meets as announced</span><span class="em" aria-hidden="true">·</span><span>Contact the Political Education group</span></p>
+          <a class="tlink wg-go" href="group-political-education.html">Get involved</a>
+        </div>
+        <div class="wg">
+          <div class="wg-top"><span class="status">Active</span></div>
+          <h3>Eco-Socialism</h3>
+          <p class="mission">Environmental health, climate, and a Green New Deal for East Tennessee.</p>
+          <p class="meta"><span>Meets as announced</span><span class="em" aria-hidden="true">·</span><span>Contact the Eco-Socialism group</span></p>
+          <a class="tlink wg-go" href="group-eco.html">Get involved</a>
+        </div>
+        <div class="wg">
+          <div class="wg-top"><span class="status">Forming</span></div>
+          <h3>Queer Liberation</h3>
+          <p class="mission">LGBTQ+ defense, mutual care, and joy across East Tennessee.</p>
+          <p class="meta"><span>Forming now</span><span class="em" aria-hidden="true">·</span><span>Interest form open</span></p>
+          <a class="tlink wg-go" href="group-queer.html">Get involved</a>
+        </div>
+      </div>
+      <div class="steps-cta">
+        <a class="btn" href="get-involved.html">See all working groups</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="section section--band" aria-labelledby="news-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From the chapter</p>
+        <h2 class="section-title" id="news-h2">Latest news</h2>
+      </div>
+      <div class="news-grid">
+        <a class="news" href="post-kat-hearing.html">
+          <span class="nmeta">Jun 2026 · Transit · Sample</span>
+          <h3>Riders pack city council for better KAT service</h3>
+          <p>Chapter members and bus riders turned out to demand frequent, affordable service across Knoxville. Read the full recap.</p>
+          <span class="nread">Read more &rsaquo;</span>
+        </a>
+        <a class="news" href="news.html">
+          <span class="nmeta">Jun 2026 · Chapter</span>
+          <h3>Bylaws revision heads to a member vote</h3>
+          <p>Months of member work go to the floor this summer. Here is what is changing and why it matters.</p>
+          <span class="nread">Read more &rsaquo;</span>
+        </a>
+        <a class="news" href="news.html">
+          <span class="nmeta">May 2026 · Political Education</span>
+          <h3>Summer reading group: mutual aid and abolition</h3>
+          <p>A six week series open to members and newcomers alike. Books provided, no homework guilt.</p>
+          <span class="nread">Read more &rsaquo;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBER INFRASTRUCTURE -->
+  <section class="section section--ink on-ink" aria-labelledby="infra-h2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Already a member</p>
+        <h2 class="section-title" id="infra-h2">Stay plugged in</h2>
+      </div>
+      <div class="infra-grid">
+        <a class="infra" href="calendar.ics">
+          <h3>Subscribe to the events calendar</h3>
+          <p>Add every meeting and action to your phone.</p>
+          <span class="igo">Subscribe &rsaquo;</span>
+        </a>
+        <a class="infra" href="documents.html">
+          <h3>Read the chapter documents</h3>
+          <p>Bylaws, codes, and policies, all public.</p>
+          <span class="igo">Open &rsaquo;</span>
+        </a>
+        <a class="infra" href="members.html">
+          <h3>Member resources</h3>
+          <p>Find the chat, working group contacts, and more.</p>
+          <span class="igo">Go &rsaquo;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN BAND -->
+  <section class="joinband on-red" aria-labelledby="join-h2">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Membership</p>
+        <h2 class="section-title" id="join-h2">Join Knoxville DSA</h2>
+        <p class="jb-note">Dues start where you can. Waivers, no questions asked.</p>
+      </div>
+      <div class="jb-actions">
+        <a class="btn" href="join.html" style="background:#fff;color:#231F20;border-color:#231F20;">Join now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section" aria-labelledby="nl-h2">
+    <div class="wrap">
+      <div class="nl-wrap">
+        <div>
+          <p class="eyebrow">Stay in the loop</p>
+          <h2 class="section-title" id="nl-h2">Get chapter news and meeting invites</h2>
+          <p class="nl-note">A short email when something is happening. No spam, and you can leave any time.</p>
+        </div>
+        <form class="nl" action="#" onsubmit="return false">
+          <div class="field">
+            <label for="nl-first">First name</label>
+            <input type="text" id="nl-first" name="first" placeholder="First name" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="nl-email">Email</label>
+            <input type="email" id="nl-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+          <button type="submit" class="btn btn--red btn--block">Sign me up</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site on-ink">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="Knoxville Area DSA logo">
+        <p>A chapter of the Democratic Socialists of America, organizing for a Knoxville that works for working people.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="start.html">Start Here</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Working groups</h4>
+        <ul>
+          <li><a href="group-transit.html">Public Transit</a></li>
+          <li><a href="group-housing.html">Housing</a></li>
+          <li><a href="group-labor.html">Labor</a></li>
+          <li><a href="group-queer.html">Queer Liberation</a></li>
+          <li><a href="group-eco.html">Eco-Socialism</a></li>
+          <li><a href="group-political-education.html">Political Education</a></li>
+          <li><a href="get-involved.html">All groups &rsaquo;</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>For members</h4>
+        <ul>
+          <li><a href="members.html">Member resources</a></li>
+          <li><a href="documents.html">Chapter documents</a></li>
+          <li><a href="calendar.ics">Events calendar (.ics)</a></li>
+          <li><a href="contact.html">Contact the chapter</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/knoxvilledsa/">Instagram @knoxvilledsa</a></li>
+          <li><a href="https://www.facebook.com/KnoxDSA/">Facebook</a></li>
+          <li><a href="https://actionnetwork.org/groups/knoxville-dsa">Action Network</a></li>
+          <li><a href="https://www.dsausa.org/join">Join DSA national</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Knoxville Area DSA · Knoxville, Tennessee</span>
+      <span>Sibling chapters: Chattanooga DSA · Northeast TN DSA</span>
+    </div>
+  </div>
+</footer>
+
+<aside class="wip-bar" role="note" aria-label="Prototype work-in-progress notice">
+  <a class="wip-inner" href="about-prototype.html">
+    <span class="wip-tag">Work in progress</span>
+    <span class="wip-text">This is a design prototype, not the live chapter site. Some content is sample.</span>
+    <span class="wip-go">See what this is <span aria-hidden="true">&rsaquo;</span></span>
+  </a>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>

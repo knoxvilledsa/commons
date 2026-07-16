@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/*__theme_param__*/(function(){try{var p=new URLSearchParams(location.search).get("theme");if(p==="dark"||p==="light"){localStorage.setItem("knoxdsa-theme",p);}}catch(e){}})();</script>
+<script>(function(){try{var k='knoxdsa-theme';var s=localStorage.getItem(k);var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queer Liberation · Knoxville Area DSA</title>
+<meta name="description" content="Queer Liberation, a Knoxville Area DSA working group. LGBTQ+ defense, mutual care, and joy across East Tennessee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- share metadata -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#EC1F27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Knoxville Area DSA">
+<meta property="og:title" content="Queer Liberation · Knoxville Area DSA">
+<meta property="og:description" content="Queer Liberation, a Knoxville Area DSA working group. LGBTQ+ defense, mutual care, and joy across East Tennessee.">
+<meta property="og:image" content="assets/og-card.svg">
+<meta property="og:url" content="https://knoxvilledsa.org/group-queer.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Queer Liberation · Knoxville Area DSA">
+<meta name="twitter:description" content="Queer Liberation, a Knoxville Area DSA working group. LGBTQ+ defense, mutual care, and joy across East Tennessee.">
+<meta name="twitter:image" content="assets/og-card.svg">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="proto-ribbon" role="region" aria-label="Prototype notice">
+  <div class="wrap">
+    <span class="prk">Prototype</span>
+    <span class="prtext">A design preview of a new Knoxville DSA website. Some content is sample, marked where shown.</span>
+    <a class="prlink" href="about-prototype.html">What is this?</a>
+    <button class="pr-x" type="button" data-ribbon-dismiss aria-label="Dismiss prototype notice">Dismiss</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html" aria-label="Knoxville Area DSA home">
+      <img class="brand-logo logo-light" src="assets/logo-black.png" alt="Knoxville Area DSA logo">
+      <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="" aria-hidden="true">
+      <span>
+        <span class="b-name">Knoxville Area DSA</span>
+        <span class="b-sub">Democratic Socialists of America</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="start.html">Start Here</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <a class="btn btn--red nav-cta desktop" href="join.html">Join</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+        <span class="tt-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Toggle theme</span>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="start.html">Start Here</a>
+        <a href="join.html">Join</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a class="mm-cta" href="join.html">Join the chapter</a>
+        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+          <span class="tt-label-dark">Switch to dark</span><span class="tt-label-light">Switch to light</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- BULLETIN STRIP -->
+<div class="bulletin on-ink" role="region" aria-label="Next meeting">
+  <div class="wrap">
+    <span class="bdot" aria-hidden="true"></span>
+    <span class="blabel">Next meeting</span>
+    <span class="bcount" data-countdown aria-live="polite">In 4 weeks</span><span class="bsep" aria-hidden="true">·</span>
+    <span data-meeting-date>Mon Jul 27</span><span class="bsep" aria-hidden="true">·</span>
+    <span>6:00 PM</span><span class="bsep" aria-hidden="true">·</span>
+    <span>Online + in person (hybrid)</span><span class="bsep" aria-hidden="true">·</span>
+    <span>All welcome</span>
+    <a class="bdetails" href="events.html">Details <span class="arrow" aria-hidden="true">&rsaquo;</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEAD -->
+  <section class="page-head" aria-labelledby="ph">
+    <div class="wrap">
+      <p class="crumbs"><a href="get-involved.html">Get Involved</a> <span class="sep" aria-hidden="true">/</span> Queer Liberation</p>
+      <p class="eyebrow">Working group</p>
+      <h1 id="ph">Queer Liberation</h1>
+      <p class="lead">LGBTQ+ defense, mutual care, and joy across East Tennessee.</p>
+      <div class="actions">
+        <a class="btn btn--ghost-light" href="#interest">Join this group</a>
+        <a class="btn btn--ghost-light" href="get-involved.html">All working groups</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW + BASICS -->
+  <section class="section" aria-labelledby="overview">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__main">
+          <div class="prose">
+            <h2 id="overview">What we do</h2>
+            <p>LGBTQ+ people in East Tennessee face material threats: state legislation targeting trans healthcare, rollbacks of legal protections, and the daily weight of living in a region where visibility can carry real risk. This group organizes in solidarity with queer and trans neighbors, centering defense alongside mutual care and the kind of visible community presence that says we are here and we are not going away.</p>
+            <p>We are forming now, which means this is the moment to shape the work. If you bring energy, an idea, or simply the conviction that queer liberation belongs on the socialist agenda in Knoxville, you are exactly who we are looking for. Show up and help build this from the start.</p>
+
+            <h3>What we are working on</h3>
+            <p class="proto-note">This group is forming. The items below are examples of the direction we expect to take, not current commitments. Early members will set the actual priorities.</p>
+            <p>The three areas pulling us forward:</p>
+            <ul>
+              <li><strong>Legislative defense and response.</strong> Tracking and responding to state and local attacks on LGBTQ+ rights, especially bills targeting trans youth healthcare, school policies, and public accommodations. Turning out bodies at the statehouse and city hall when it counts.</li>
+              <li><strong>Mutual care and practical support.</strong> Connecting queer community members to housing help, legal information, and the chapter’s broader mutual aid network. Neighbors meeting neighbors’ needs directly.</li>
+              <li><strong>Community presence and visibility.</strong> Public events, coalition work with existing Knoxville LGBTQ+ organizations, and a clear signal that queer people belong in this organizing space.</li>
+            </ul>
+
+            <h3>What you would actually do</h3>
+            <p>No prior organizing experience required. People joining a forming group usually start with something straightforward and concrete:</p>
+            <ul>
+              <li>Come to an early meeting and help decide what this group actually works on.</li>
+              <li>Map the landscape: share what local LGBTQ+ groups, needs, or fights you already know about.</li>
+              <li>Connect us to existing community organizations in Knoxville you have relationships with.</li>
+              <li>Draft a flyer, take meeting notes, or help get the word out to friends who should be here.</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="split__aside">
+          <div class="factbox">
+            <h3>The basics</h3>
+            <dl class="meta-list">
+              <div>
+                <dt>Status</dt>
+                <dd>Forming</dd>
+              </div>
+              <div>
+                <dt>Meets</dt>
+                <dd>Forming now</dd>
+              </div>
+              <div>
+                <dt>Contact</dt>
+                <dd>Lead forming. Use the interest form below or reach us through <a href="contact.html">Contact</a>.</dd>
+              </div>
+              <div>
+                <dt>Coordinates on</dt>
+                <dd>Forming</dd>
+              </div>
+            </dl>
+            <a class="btn btn--red" href="#interest">Join this group</a>
+            <a class="btn" href="contact.html">Talk to an organizer</a>
+          </div>
+          <div class="callout">
+            <span class="clabel">New to this?</span>
+            <p>You can simply show up when the group holds its first meeting. No dues, no commitment, and someone will look out for you when you arrive. If you would rather get your bearings first, the <a href="start.html">Start Here</a> guide walks you through it.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEREST FORM -->
+  <section class="section section--band" id="interest" aria-labelledby="interest-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Get on the list</p>
+        <h2 class="section-title" id="interest-h">Come to the next one</h2>
+        <p class="lead">Leave your name and we will reach out as soon as the group has its first meeting scheduled. You have a say in what this group becomes.</p>
+      </div>
+      <p class="proto-note">Prototype form. In the live site this submits to the chapter’s Action Network.</p>
+      <form class="form-grid" action="#" onsubmit="return false">
+        <div class="field--row">
+          <div class="field">
+            <label for="q-name">First name</label>
+            <input type="text" id="q-name" name="first" placeholder="First name" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="q-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="q-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+        </div>
+        <fieldset class="choices">
+          <legend>Keep me posted</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="checkbox" name="interest" value="queer" checked> Add me to Queer Liberation</label>
+          </div>
+        </fieldset>
+        <div class="form-actions">
+          <button type="submit" class="btn btn--red">Send me the next step</button>
+          <span class="form-note">No spam. We use it to get you to the first meeting, nothing else.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- JOIN BAND -->
+  <section class="joinband on-red band--red" aria-labelledby="join-h2">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Membership</p>
+        <h2 class="section-title" id="join-h2">Ready to make it official?</h2>
+        <p class="jb-note">Working groups are open to everyone. Joining DSA is how you get a vote in where the chapter goes next. Dues start where you can, waivers no questions asked.</p>
+      </div>
+      <div class="jb-actions">
+        <a class="btn" href="join.html" style="background:#fff;color:#231F20;border-color:#231F20;">Join Knoxville DSA</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site on-ink">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="Knoxville Area DSA logo">
+        <p>A chapter of the Democratic Socialists of America, organizing for a Knoxville that works for working people.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="start.html">Start Here</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Working groups</h4>
+        <ul>
+          <li><a href="group-transit.html">Public Transit</a></li>
+          <li><a href="group-housing.html">Housing</a></li>
+          <li><a href="group-labor.html">Labor</a></li>
+          <li><a href="group-queer.html">Queer Liberation</a></li>
+          <li><a href="group-eco.html">Eco-Socialism</a></li>
+          <li><a href="group-political-education.html">Political Education</a></li>
+          <li><a href="get-involved.html">All groups &rsaquo;</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>For members</h4>
+        <ul>
+          <li><a href="members.html">Member resources</a></li>
+          <li><a href="documents.html">Chapter documents</a></li>
+          <li><a href="calendar.ics">Events calendar (.ics)</a></li>
+          <li><a href="contact.html">Contact the chapter</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/knoxvilledsa/">Instagram @knoxvilledsa</a></li>
+          <li><a href="https://www.facebook.com/KnoxDSA/">Facebook</a></li>
+          <li><a href="https://actionnetwork.org/groups/knoxville-dsa">Action Network</a></li>
+          <li><a href="https://www.dsausa.org/join">Join DSA national</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Knoxville Area DSA · Knoxville, Tennessee</span>
+      <span>Sibling chapters: Chattanooga DSA · Northeast TN DSA</span>
+    </div>
+  </div>
+</footer>
+
+<aside class="wip-bar" role="note" aria-label="Prototype work-in-progress notice">
+  <a class="wip-inner" href="about-prototype.html">
+    <span class="wip-tag">Work in progress</span>
+    <span class="wip-text">This is a design prototype, not the live chapter site. Some content is sample.</span>
+    <span class="wip-go">See what this is <span aria-hidden="true">&rsaquo;</span></span>
+  </a>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/*__theme_param__*/(function(){try{var p=new URLSearchParams(location.search).get("theme");if(p==="dark"||p==="light"){localStorage.setItem("knoxdsa-theme",p);}}catch(e){}})();</script>
+<script>(function(){try{var k='knoxdsa-theme';var s=localStorage.getItem(k);var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publish From a Form · Knoxville Area DSA</title>
+<meta name="description" content="How updates work on the new site: a volunteer who can use Gmail can publish a post from a simple form, with no code and no server. Try the live demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- share metadata -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#EC1F27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Knoxville Area DSA">
+<meta property="og:title" content="Publish From a Form · Knoxville Area DSA">
+<meta property="og:description" content="How updates work on the new site: a volunteer who can use Gmail can publish a post from a simple form, with no code and no server. Try the live demo.">
+<meta property="og:image" content="assets/og-card.svg">
+<meta property="og:url" content="https://knoxvilledsa.org/publish-demo.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Publish From a Form · Knoxville Area DSA">
+<meta name="twitter:description" content="How updates work on the new site: a volunteer who can use Gmail can publish a post from a simple form, with no code and no server. Try the live demo.">
+<meta name="twitter:image" content="assets/og-card.svg">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="meta-side" aria-hidden="true"></aside>
+
+<div class="proto-ribbon" role="region" aria-label="Prototype notice">
+  <div class="wrap">
+    <span class="prk">Prototype</span>
+    <span class="prtext">A design preview of a new Knoxville DSA website. Some content is sample, marked where shown.</span>
+    <a class="prlink" href="about-prototype.html">What is this?</a>
+    <button class="pr-x" type="button" data-ribbon-dismiss aria-label="Dismiss prototype notice">Dismiss</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html" aria-label="Knoxville Area DSA home">
+      <img class="brand-logo logo-light" src="assets/logo-black.png" alt="Knoxville Area DSA logo">
+      <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="" aria-hidden="true">
+      <span>
+        <span class="b-name">Knoxville Area DSA</span>
+        <span class="b-sub">Democratic Socialists of America</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="start.html">Start Here</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <a class="btn btn--red nav-cta desktop" href="join.html">Join</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+        <span class="tt-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Toggle theme</span>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="start.html">Start Here</a>
+        <a href="join.html">Join</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a class="mm-cta" href="join.html">Join the chapter</a>
+        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+          <span class="tt-label-dark">Switch to dark</span><span class="tt-label-light">Switch to light</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- BULLETIN STRIP -->
+<div class="bulletin on-ink" role="region" aria-label="Next meeting">
+  <div class="wrap">
+    <span class="bdot" aria-hidden="true"></span>
+    <span class="blabel">Next meeting</span>
+    <span class="bcount" data-countdown aria-live="polite">In 4 weeks</span><span class="bsep" aria-hidden="true">·</span>
+    <span data-meeting-date>Mon Jul 27</span><span class="bsep" aria-hidden="true">·</span>
+    <span>6:00 PM</span><span class="bsep" aria-hidden="true">·</span>
+    <span>Online + in person (hybrid)</span><span class="bsep" aria-hidden="true">·</span>
+    <span>All welcome</span>
+    <a class="bdetails" href="events.html">Details <span class="arrow" aria-hidden="true">&rsaquo;</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEAD -->
+  <section class="page-head" aria-labelledby="ph">
+    <div class="wrap">
+      <p class="crumbs"><a href="about-prototype.html">About this prototype</a> <span class="sep" aria-hidden="true">/</span> Publishing</p>
+      <p class="eyebrow">How updates work</p>
+      <h1 id="ph">Publish from a form</h1>
+      <p class="lead">The fear with any new site is the same one every time: who will keep it updated? The answer here is anyone in the chapter, because publishing is a form, not code. If you can send an email, you can post the news.</p>
+      <div class="actions">
+        <a class="btn btn--ghost-light" href="#demo">Try the live demo</a>
+        <a class="btn btn--ghost-light" href="why-new-site.html">Why a new site</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE EDITING MODEL -->
+  <section class="section" aria-labelledby="model-h">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="model-h">The editing model, in plain language</h2>
+        <p>A volunteer signs in with a Google (Gmail) account, the same login they already use every day. They open News, click <strong>New post</strong>, and a simple form appears.</p>
+        <p>The form asks for exactly three things: a <strong>Title</strong>, a <strong>Body</strong>, and an optional <strong>Image</strong>. They type the headline, write a sentence or two, drop in a photo if they have one, and click <strong>Publish</strong>.</p>
+        <p>Behind the scenes a rebuild runs automatically, and the post is live on the site in about a minute. No file to upload, no plugin to update, no server to log into.</p>
+        <p>The most important part is what the form does not show. It exposes only the content fields, never the layout, the menus, or the code. An editor cannot rearrange the page, break the design, or take the site down by accident. The worst thing that can happen is a typo, and that is a one-click fix.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE DEMO -->
+  <section class="section section--band" id="demo" aria-labelledby="demo-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">See it work</p>
+        <h2 class="section-title" id="demo-h">Write a post, watch it go live</h2>
+        <p class="lead">This is a front-end mockup of the real editor. Type a headline and a sentence on the left, click Publish, and watch it appear on the right exactly the way it would on the live site.</p>
+      </div>
+
+      <div data-publish-demo>
+        <div class="pubdemo">
+          <div class="pubdemo__pane">
+            <p class="pdkicker">Volunteer&rsquo;s view</p>
+            <p class="pdhead">Write a post</p>
+            <div class="form-grid">
+              <div class="field">
+                <label for="pd-title">Title</label>
+                <input type="text" id="pd-title" data-field="title" placeholder="Riders pack city council for better KAT service">
+              </div>
+              <div class="field">
+                <label for="pd-body">Body</label>
+                <textarea id="pd-body" data-field="body" rows="4" placeholder="Forty neighbors turned out Tuesday night to demand frequent, affordable bus service across Knoxville."></textarea>
+              </div>
+              <div class="field">
+                <label for="pd-image">Featured image</label>
+                <input type="text" id="pd-image" placeholder="meeting-photo.jpg" disabled>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn--red" data-publish>Publish</button>
+            </div>
+            <div class="deploybar" data-deploy hidden><span class="dprog" aria-hidden="true"></span><span data-deploy-text>Publishing…</span></div>
+            <p class="proto-note">This is a front-end demo of the real editor. Nothing leaves your browser.</p>
+          </div>
+          <div class="pubdemo__pane pubdemo__pane--live">
+            <p class="pdkicker">What goes live</p>
+            <p class="pdhead">On the site</p>
+            <p class="lp-empty" data-live-empty>Your published post will appear here.</p>
+            <article class="livepost" data-live hidden>
+              <p class="lp-meta"><span data-live-date>Just now</span> · News</p>
+              <h4 data-live-title></h4>
+              <p data-live-body></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY IT MATTERS -->
+  <section class="section" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="why-h">Keeping the site current</h2>
+        <p>Every stale page on the current site comes back to the same problem: updating it is a chore that only one person knows how to do. When that person is busy, the events page sits frozen and the news goes quiet.</p>
+        <p>This model removes that bottleneck. Posting is so easy that anyone in a working group can do it from their phone after a meeting, so the chapter never depends on a single webmaster. Upkeep is near zero, and the site stays as alive as the chapter is.</p>
+        <p>For the full picture of what is wrong with the site today and how the rebuild fixes it, see <a class="tlink" href="why-new-site.html">why a new site<span class="arrow" aria-hidden="true">&rsaquo;</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="joinband on-red band--red" aria-labelledby="cta-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">The rebuild</p>
+        <h2 class="section-title" id="cta-h">A site the whole chapter can run</h2>
+        <p class="jb-note">Easy to update means it actually gets updated. See how the planned stack stays free, fast, and idiot-proof.</p>
+      </div>
+      <div class="jb-actions">
+        <a class="btn" href="why-new-site.html" style="background:#fff;color:#231F20;border-color:#231F20;">Why a new site</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site on-ink">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="Knoxville Area DSA logo">
+        <p>A chapter of the Democratic Socialists of America, organizing for a Knoxville that works for working people.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="start.html">Start Here</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Working groups</h4>
+        <ul>
+          <li><a href="group-transit.html">Public Transit</a></li>
+          <li><a href="group-housing.html">Housing</a></li>
+          <li><a href="group-labor.html">Labor</a></li>
+          <li><a href="group-queer.html">Queer Liberation</a></li>
+          <li><a href="group-eco.html">Eco-Socialism</a></li>
+          <li><a href="group-political-education.html">Political Education</a></li>
+          <li><a href="get-involved.html">All groups &rsaquo;</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>For members</h4>
+        <ul>
+          <li><a href="members.html">Member resources</a></li>
+          <li><a href="documents.html">Chapter documents</a></li>
+          <li><a href="calendar.ics">Events calendar (.ics)</a></li>
+          <li><a href="contact.html">Contact the chapter</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/knoxvilledsa/">Instagram @knoxvilledsa</a></li>
+          <li><a href="https://www.facebook.com/KnoxDSA/">Facebook</a></li>
+          <li><a href="https://actionnetwork.org/groups/knoxville-dsa">Action Network</a></li>
+          <li><a href="https://www.dsausa.org/join">Join DSA national</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Knoxville Area DSA · Knoxville, Tennessee</span>
+      <span>Sibling chapters: Chattanooga DSA · Northeast TN DSA</span>
+    </div>
+  </div>
+</footer>
+
+<aside class="wip-bar" role="note" aria-label="Prototype work-in-progress notice">
+  <a class="wip-inner" href="about-prototype.html">
+    <span class="wip-tag">Work in progress</span>
+    <span class="wip-text">This is a design prototype, not the live chapter site. Some content is sample.</span>
+    <span class="wip-go">See what this is <span aria-hidden="true">&rsaquo;</span></span>
+  </a>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>

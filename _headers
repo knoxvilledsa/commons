@@ -1,0 +1,5 @@
+# Cloudflare Pages headers. While this is a prototype preview, keep it out of
+# search indexes. Remove this file (and robots.txt) when the site goes live on
+# the real chapter domain.
+/*
+  X-Robots-Tag: noindex, nofollow

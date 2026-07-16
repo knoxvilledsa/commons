@@ -1,0 +1,9 @@
+# The house typeface is licensed for DSA use only and must never be published.
+assets/fonts/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

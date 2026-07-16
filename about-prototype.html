@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/*__theme_param__*/(function(){try{var p=new URLSearchParams(location.search).get("theme");if(p==="dark"||p==="light"){localStorage.setItem("knoxdsa-theme",p);}}catch(e){}})();</script>
+<script>(function(){try{var k='knoxdsa-theme';var s=localStorage.getItem(k);var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About This Prototype · Knoxville Area DSA</title>
+<meta name="description" content="About this prototype: a working preview of a new Knoxville Area DSA website, built to show the potential of a rebuild. What is real, what is sample, and a guided tour.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- share metadata -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#EC1F27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Knoxville Area DSA">
+<meta property="og:title" content="About This Prototype · Knoxville Area DSA">
+<meta property="og:description" content="About this prototype: a working preview of a new Knoxville Area DSA website, built to show the potential of a rebuild. What is real, what is sample, and a guided tour.">
+<meta property="og:image" content="assets/og-card.svg">
+<meta property="og:url" content="https://knoxvilledsa.org/about-prototype.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About This Prototype · Knoxville Area DSA">
+<meta name="twitter:description" content="About this prototype: a working preview of a new Knoxville Area DSA website, built to show the potential of a rebuild. What is real, what is sample, and a guided tour.">
+<meta name="twitter:image" content="assets/og-card.svg">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="meta-side" aria-hidden="true"></aside>
+
+<div class="proto-ribbon" role="region" aria-label="Prototype notice">
+  <div class="wrap">
+    <span class="prk">Prototype</span>
+    <span class="prtext">A design preview of a new Knoxville DSA website. Some content is sample, marked where shown.</span>
+    <a class="prlink" href="about-prototype.html">What is this?</a>
+    <button class="pr-x" type="button" data-ribbon-dismiss aria-label="Dismiss prototype notice">Dismiss</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html" aria-label="Knoxville Area DSA home">
+      <img class="brand-logo logo-light" src="assets/logo-black.png" alt="Knoxville Area DSA logo">
+      <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="" aria-hidden="true">
+      <span>
+        <span class="b-name">Knoxville Area DSA</span>
+        <span class="b-sub">Democratic Socialists of America</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="start.html">Start Here</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <a class="btn btn--red nav-cta desktop" href="join.html">Join</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+        <span class="tt-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Toggle theme</span>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="start.html">Start Here</a>
+        <a href="join.html">Join</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a class="mm-cta" href="join.html">Join the chapter</a>
+        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M19.4 4.6l-1.9 1.9M6.5 17.5l-1.9 1.9"/></svg>
+          <span class="tt-label-dark">Switch to dark</span><span class="tt-label-light">Switch to light</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- BULLETIN STRIP -->
+<div class="bulletin on-ink" role="region" aria-label="Next meeting">
+  <div class="wrap">
+    <span class="bdot" aria-hidden="true"></span>
+    <span class="blabel">Next meeting</span>
+    <span class="bcount" data-countdown aria-live="polite">In 4 weeks</span><span class="bsep" aria-hidden="true">·</span>
+    <span data-meeting-date>Mon Jul 27</span><span class="bsep" aria-hidden="true">·</span>
+    <span>6:00 PM</span><span class="bsep" aria-hidden="true">·</span>
+    <span>Online + in person (hybrid)</span><span class="bsep" aria-hidden="true">·</span>
+    <span>All welcome</span>
+    <a class="bdetails" href="events.html">Details <span class="arrow" aria-hidden="true">&rsaquo;</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEAD -->
+  <section class="page-head" aria-labelledby="ph">
+    <div class="wrap">
+      <p class="eyebrow">About this prototype</p>
+      <h1 id="ph">About this prototype</h1>
+      <p class="lead">This is a working preview of a new Knoxville Area DSA website, built front-end only to show the chapter what a rebuild could look like, feel like, and cost to run.</p>
+    </div>
+  </section>
+
+  <!-- WHAT THIS IS / AT A GLANCE -->
+  <section class="section" aria-labelledby="what">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__main">
+          <div class="prose">
+            <h2 id="what">What this is</h2>
+            <p>Every page in this prototype is a real, clickable HTML file built in the chapter&rsquo;s house style (the &ldquo;Knoxville Bulletin&rdquo;). You can navigate the full site, toggle dark mode, and interact with forms. Nothing sends data anywhere: the forms show a success state because app.js intercepts them for the demo. The ribbon at the top of each page links back here.</p>
+            <p>The prototype was built to give the chapter something concrete to review before committing to a production rebuild. It is a preview, kept out of every search index on purpose, and shared by direct link for chapter review.</p>
+
+            <h3>What is real</h3>
+            <ul>
+              <li>The chapter name, mission, and legal status: Knoxville Area DSA, a 501(c)(4) nonprofit, EIN 83-2598312</li>
+              <li>The General Meeting schedule: the fourth Monday of each month, hybrid, about 6:00 PM; RSVP via Action Network; next up <span data-recur="4MO" data-fmt="monthdayyear">July 27, 2026</span></li>
+              <li>The dates are live, not typed in: every recurring meeting and event on this prototype works out its own next occurrence, so the calendar was correct the day you opened it and stays correct months from now with nobody touching it. That is the same automation the real site would run, which means no volunteer has to re-enter the schedule every month</li>
+              <li>Working groups and their real public contacts: each reached through its interest form or the Contact page rather than a personal contact</li>
+              <li>Live links to national DSA join, Action Network, Instagram (@knoxvilledsa), and Facebook</li>
+              <li>Sibling chapters: Chattanooga DSA and Northeast TN DSA</li>
+              <li>The mission line, quoted verbatim: &ldquo;We believe that both the economy and society should be run democratically to meet human needs, not to make profits for a few.&rdquo;</li>
+              <li>The donate disclosure: contributions to Knoxville Area DSA are not tax-deductible</li>
+            </ul>
+
+            <h3>What is sample</h3>
+            <p>Content that cannot be mistaken for a real chapter commitment is marked with a &ldquo;Sample&rdquo; label or a prototype note wherever it appears on the page that carries it. This includes:</p>
+            <ul>
+              <li>Example events and their details</li>
+              <li>News posts and article body copy</li>
+              <li>Member quotes</li>
+              <li>Campaign numbers and progress figures</li>
+            </ul>
+            <p>If you see content on another page and it is not marked, it should be real chapter data. If something looks wrong, <a href="contact.html">let us know</a>.</p>
+
+            <h3>Image and illustration credits</h3>
+            <ul>
+              <li>Raised fist and rose emblem (Join, Donate pages): in-house artwork, CC0.</li>
+              <li>Hammer icon (Labor page): Lucide Icons, ISC license.</li>
+              <li>Knoxville skyline silhouette (How the Chapter Works page): a Creative Market artist via Creative Market, Creative Market Commercial License.</li>
+              <li>Raised-fists solidarity icon (Community Defense page): a Creative Market artist via Creative Market, Creative Market Commercial License.</li>
+              <li>Bus-boarding illustration (Public Transportation page): a Creative Market artist via Creative Market, Creative Market Commercial License.</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="split__aside">
+          <div class="factbox">
+            <h3>At a glance</h3>
+            <dl class="meta-list">
+              <div>
+                <dt>Status</dt>
+                <dd>Design prototype</dd>
+              </div>
+              <div>
+                <dt>Scope</dt>
+                <dd>Front-end only</dd>
+              </div>
+              <div>
+                <dt>Cost to run</dt>
+                <dd>About 0 USD per month</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Astro, Sanity, Cloudflare Pages</dd>
+              </div>
+            </dl>
+            <a class="btn btn--red" href="why-new-site.html">Why a new site</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASTER PAGE INDEX -->
+  <section class="section section--band" aria-labelledby="index-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Jump to any page</p>
+        <h2 class="section-title" id="index-h">Every page in the prototype</h2>
+        <p class="lead">The whole site in one place, for easy review. The pages in the last column are about the prototype itself (each carries a caution stripe down its side), not part of the chapter site.</p>
+      </div>
+      <div class="page-index">
+        <div class="pi-col">
+          <h3>The chapter site</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="start.html">Start Here</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="campaigns.html">Campaigns and wins</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="post-kat-hearing.html">Sample news article</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="structure.html">How the chapter works</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="members.html">Member resources</a></li>
+          </ul>
+        </div>
+        <div class="pi-col">
+          <h3>Working groups</h3>
+          <ul>
+            <li><a href="group-transit.html">Public Transportation</a></li>
+            <li><a href="group-political-education.html">Political Education</a></li>
+            <li><a href="group-electoral.html">Electoral Politics</a></li>
+            <li><a href="group-eco.html">Eco-Socialism</a></li>
+            <li><a href="group-community-defense.html">Community Defense</a></li>
+            <li><a href="group-housing.html">Housing &amp; Tenant Power</a></li>
+            <li><a href="group-labor.html">Labor</a></li>
+            <li><a href="group-mutual-aid.html">Mutual Aid</a></li>
+            <li><a href="group-queer.html">Queer Liberation</a></li>
+          </ul>
+        </div>
+        <div class="pi-col">
+          <h3>About the prototype</h3>
+          <ul>
+            <li><a href="about-prototype.html">About this prototype</a></li>
+            <li><a href="why-new-site.html">Why a new site</a></li>
+            <li><a href="hosting.html">How it is hosted</a></li>
+            <li><a href="publish-demo.html">Publish from a form</a></li>
+            <li><a href="share-card.html">The share card</a></li>
+            <li><a href="flyer.html">The printable flyer</a></li>
+            <li><a href="404.html">The 404 page</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAKE THE TOUR -->
+  <section class="section section--band" aria-labelledby="tour">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The demo pages</p>
+        <h2 class="section-title" id="tour">Take the tour</h2>
+        <p class="lead">Eight pages show what the live site can do. Click any card to open it.</p>
+      </div>
+
+      <div class="cards cards--3">
+        <a class="linkcard" href="why-new-site.html">
+          <span class="kicker">The case for change</span>
+          <h3>Why a new site</h3>
+          <p>The current site&rsquo;s real problems and what the rebuild solves: the broken Contact page, the missing donate path, a blog frozen since 2023.</p>
+          <span class="go">Open &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="hosting.html">
+          <span class="kicker">Infrastructure</span>
+          <h3>How it is hosted</h3>
+          <p>Astro on Cloudflare Pages: no server to patch, no database, global CDN, about 0 USD per month plus the domain renewal.</p>
+          <span class="go">Open &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="publish-demo.html">
+          <span class="kicker">Editor experience</span>
+          <h3>Publish from a form</h3>
+          <p>An interactive demo: fill in a Sanity form, hit Publish, and watch the page update live in about a minute. No code required.</p>
+          <span class="go">Try it &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="share-card.html">
+          <span class="kicker">Social sharing</span>
+          <h3>The share card</h3>
+          <p>How chapter posts look when shared to Instagram, Facebook, or Signal, with a favicon and browser-tab preview.</p>
+          <span class="go">Open &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="campaigns.html">
+          <span class="kicker">Campaign tools</span>
+          <h3>Campaigns and the map</h3>
+          <p>Animated goal trackers, a stylized Knoxville pin map with popup locations, and a dated win timeline.</p>
+          <span class="go">Open &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="post-kat-hearing.html">
+          <span class="kicker">News post</span>
+          <h3>A sample article</h3>
+          <p>A full-length sample post covering a chapter appearance at a KAT hearing, showing the site&rsquo;s editorial format.</p>
+          <span class="go">Read it &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="404.html">
+          <span class="kicker">Error page</span>
+          <h3>The friendly 404</h3>
+          <p>What visitors see when they land on a dead link, with on-brand recovery options so no one gets stuck.</p>
+          <span class="go">Open &rsaquo;</span>
+        </a>
+        <a class="linkcard" href="flyer.html">
+          <span class="kicker">Print materials</span>
+          <h3>The printable flyer</h3>
+          <p>A print-ready, in-brand recruitment flyer built from the same design tokens as the site, ready to post around Knoxville.</p>
+          <span class="go">Open &rsaquo;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PLAN AFTER THIS -->
+  <section class="section" aria-labelledby="plan">
+    <div class="wrap">
+      <div class="prose measure-wide">
+        <h2 id="plan">The plan after this</h2>
+        <p>If the chapter approves a rebuild, the production site runs on the locked stack: Astro for the front end, Sanity on its free tier as a structured content store, and Cloudflare Pages for hosting. That comes to about 0 USD per month, plus the annual domain renewal. Editors sign in with a Gmail account, fill in a structured form, and hit Publish. A rebuild runs automatically and the change is live in about a minute. There is no server to patch, no WordPress database to back up, and no plugin that can break after an update.</p>
+        <p>The stack is approved and the webfont question is settled: DSA national permits serving Manifold as a public webfont, so the house face ships in the built pages, with Archivo kept only as a graceful fallback. A handful of decisions only the chapter can make still gate a production build:</p>
+        <ul>
+          <li><strong>A private code repository.</strong> Cloudflare Pages builds the site from a GitHub repository. The chapter needs to create a separate, private repository for the site source, kept private so the licensed font ships inside the built pages rather than as raw files.</li>
+          <li><strong>Donation processor and the legal gate.</strong> The chapter needs to pick a payment path (for example ActBlue Civics, PayPal, or Stripe) and, because it is a 501(c)(4), get the Tennessee charitable solicitation exemption on file before the donate page asks for money. The donate page in this prototype is a non-functional mockup of the proposed flow.</li>
+          <li><strong>Action Network access.</strong> The chapter needs to confirm its Action Network credentials so the Join form, the RSVP forms, and the welcome email sequence wire into the tools it already uses.</li>
+          <li><strong>Domain control and cutover.</strong> The chapter needs to confirm who controls DNS for knoxvilledsa.org so it can plan the switch, keeping the current site reachable until the new one is live.</li>
+        </ul>
+        <p>Most are quick confirmations; the donation legal step and the domain cutover need a little lead time. See <a href="why-new-site.html">Why a new site</a> for the full technical and organizational case.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN BAND -->
+  <section class="joinband on-red band--red" aria-labelledby="join-h2">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Membership</p>
+        <h2 class="section-title" id="join-h2">You can join while the site is being built</h2>
+        <p class="jb-note">You don&rsquo;t need a new website to get involved. The chapter meets the fourth Monday of every month, hybrid, and working groups are open to anyone. Dues start where you can, waivers no questions asked.</p>
+      </div>
+      <div class="jb-actions">
+        <a class="btn" href="join.html" style="background:#fff;color:#231F20;border-color:#231F20;">Join Knoxville DSA</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site on-ink">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="brand-logo logo-dark" src="assets/logo-white.png" alt="Knoxville Area DSA logo">
+        <p>A chapter of the Democratic Socialists of America, organizing for a Knoxville that works for working people.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="start.html">Start Here</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Working groups</h4>
+        <ul>
+          <li><a href="group-transit.html">Public Transit</a></li>
+          <li><a href="group-housing.html">Housing</a></li>
+          <li><a href="group-labor.html">Labor</a></li>
+          <li><a href="group-queer.html">Queer Liberation</a></li>
+          <li><a href="group-eco.html">Eco-Socialism</a></li>
+          <li><a href="group-political-education.html">Political Education</a></li>
+          <li><a href="get-involved.html">All groups &rsaquo;</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>For members</h4>
+        <ul>
+          <li><a href="members.html">Member resources</a></li>
+          <li><a href="documents.html">Chapter documents</a></li>
+          <li><a href="calendar.ics">Events calendar (.ics)</a></li>
+          <li><a href="contact.html">Contact the chapter</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/knoxvilledsa/">Instagram @knoxvilledsa</a></li>
+          <li><a href="https://www.facebook.com/KnoxDSA/">Facebook</a></li>
+          <li><a href="https://actionnetwork.org/groups/knoxville-dsa">Action Network</a></li>
+          <li><a href="https://www.dsausa.org/join">Join DSA national</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Knoxville Area DSA · Knoxville, Tennessee</span>
+      <span>Sibling chapters: Chattanooga DSA · Northeast TN DSA</span>
+    </div>
+  </div>
+</footer>
+
+<aside class="wip-bar" role="note" aria-label="Prototype work-in-progress notice">
+  <a class="wip-inner" href="about-prototype.html">
+    <span class="wip-tag">Work in progress</span>
+    <span class="wip-text">This is a design prototype, not the live chapter site. Some content is sample.</span>
+    <span class="wip-go">See what this is <span aria-hidden="true">&rsaquo;</span></span>
+  </a>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>
