@@ -1,0 +1,27 @@
+License for the typeface
+
+The house typeface used on this site is Manifold DSA. It is NOT covered by the
+site's own license, and the difference matters:
+
+  LICENSE-content  CC BY-SA 4.0, and it covers the rest of this site, both the
+                   written content and the code. It permits commercial use and
+                   adaptation.
+  this file        The typeface, which permits NEITHER of those.
+
+Manifold DSA is released under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International license
+(CC BY-NC-ND 4.0). It was created specifically for DSA and non-profit use.
+
+In plain terms:
+
+  Attribution      Credit the typeface where it is used or redistributed.
+  NonCommercial    Do not use it for commercial projects.
+  NoDerivatives    Do not modify it. That includes subsetting, re-hinting, or
+                   converting it to another format. The web font files served
+                   from /fonts/ are unmodified copies for this reason.
+
+The font files are served here so this site renders in the chapter's house
+typeface. Redistribution is permitted on those terms; adaptation is not.
+
+The full license text is at
+https://creativecommons.org/licenses/by-nc-nd/4.0/

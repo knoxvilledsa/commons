@@ -1,0 +1,106 @@
+# Cloudflare Pages redirect map, for the knoxvilledsa.org apex cutover.
+#
+# WHY THIS FILE EXISTS. The apex has served WordPress for years, so its URLs are
+# in Google's index, in members' bookmarks, in old Facebook posts and on printed
+# material. Cutting the apex over to this site without a map turns every one of
+# them into a 404. The staging host (new.knoxvilledsa.org) never needed this:
+# it is noindexed and has no history, which is why the earlier decision to
+# "accept the 404s" was correct THERE and is not correct here.
+#
+# SOURCE OF THE LEFT-HAND COLUMN. Every path below was read from the live
+# WordPress sitemap on 2026-07-26 (wp-sitemap.xml and its children), not guessed.
+# If WordPress gains pages before the cutover, re-read that sitemap.
+#
+# TRAILING SLASHES. WordPress publishes and indexes the slashed form
+# ("/calendar/"); this site is built with trailingSlash:'never' and
+# build.format:'file', so it serves the bare form ("/events"). Both forms are
+# listed on the left so an old link works whichever way it was written down.
+#
+# HOSTNAME MATCHING. Pages matches on PATH ONLY. The www-to-apex redirect
+# cannot live in this file; it is a zone-level Redirect Rule plus a proxied
+# placeholder DNS record for www. See APEX_CUTOVER_RUNBOOK.md.
+#
+# ---------------------------------------------------------------------------
+# ALL THREE of the originally unresolved pages now have homes (2026-07-27):
+#
+#   /members/ and /bylaws-revision/    -> /documents
+#   /resources-for-our-discussion/     -> /resources, a real page built from the
+#                                         old one's reading list
+#
+# See stack/commons/public/scripts/sync-documents.py for how /documents is
+# generated and gated on the Records Index audience level.
+# ---------------------------------------------------------------------------
+
+# --- the governance-document pages -------------------------------------------
+/bylaws-revision/     /documents   301
+/bylaws-revision      /documents   301
+
+# The old members hub was mostly a document shelf. Everything else it carried
+# (events, joining, the newsletter, contact) is in the main nav now, so send it
+# where the documents actually went.
+/members/             /documents   301
+/members              /documents   301
+
+# --- WordPress pages with a real equivalent on this site --------------------
+/upcoming-events/     /events      301
+/upcoming-events      /events      301
+/calendar/            /events      301
+/calendar             /events      301
+
+/chapter-working-groups/  /committees  301
+/chapter-working-groups   /committees  301
+
+# The grievance route is genuine, not a courtesy redirect: /contact carries a
+# "Safety and grievances" section and the form has a grievance category that
+# reaches the elected Harassment Grievance Officer.
+/harassment-and-grievance-form/  /contact  301
+/harassment-and-grievance-form   /contact  301
+
+/recent-posts/        /newsletter  301
+/recent-posts         /newsletter  301
+
+/resources-for-our-discussion/newsletter-under-construction/  /newsletter  301
+/resources-for-our-discussion/newsletter-under-construction   /newsletter  301
+
+# The one WordPress post.
+/call-for-solidarity-starbucks-off-cornell-campus/  /newsletter  301
+/call-for-solidarity-starbucks-off-cornell-campus   /newsletter  301
+
+# Same path either side; only the trailing slash needs normalising.
+/newsletter/          /newsletter  301
+
+/resources-for-our-discussion/  /resources  301
+/resources-for-our-discussion   /resources  301
+
+# --- the governance PDFs the old members page linked ------------------------
+# Five documents the old members page linked are the chapter's own governing
+# texts, not photographs: the 2016 bylaws, the HGO procedures, and complaint
+# forms A, B and C. The blanket "uploads will 404, accept it" decision was made
+# about years of unreviewed member photos and reads very differently for these,
+# so all five were recovered off the droplet during the cutover and are served
+# from this site now. The REST of /wp-content/ still 404s, as decided.
+/wp-content/uploads/2026/03/Bylaws-of-the-Knoxville-area-Local-1.pdf  /documents/knoxville-dsa-bylaws-2016-as-amended.pdf          301
+/wp-content/uploads/2021/12/Knoxville-DSA-HGO-1-1-1.pdf               /documents/knoxville-dsa-harassment-grievance-procedures.pdf 301
+/wp-content/uploads/2022/02/Knoxville_DSA_HGO_Form_A.pdf              /documents/knoxville-dsa-grievance-form-a-complaint.pdf      301
+/wp-content/uploads/2022/02/Knoxville_DSA_HGO_Form_B.pdf              /documents/knoxville-dsa-grievance-form-b-response.pdf       301
+/wp-content/uploads/2022/02/Knoxville_DSA_HGO_Form_C.pdf              /documents/knoxville-dsa-grievance-form-c-appeal.pdf         301
+
+# The old site also linked the online grievance form as an /index.php/ path.
+/index.php/harassment-and-grievance-form/  /contact  301
+/index.php/harassment-and-grievance-form   /contact  301
+
+# --- WordPress machinery ----------------------------------------------------
+# Category archives collapse to the newsletter index.
+/category/*           /newsletter  301
+
+# Author archives: no equivalent, and the chapter does not publish an author
+# index. Send them home rather than leaving member-named URLs resolving.
+/author/*             /            301
+
+# Feed subscribers would otherwise silently stop receiving anything.
+/feed/                /newsletter  301
+/comments/feed/       /newsletter  301
+
+# WordPress ships this page on every new install; it was never chapter content.
+/sample-page/         /            301
+/sample-page          /            301
